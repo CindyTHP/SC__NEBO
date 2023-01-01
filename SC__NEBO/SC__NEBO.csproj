@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{60CF22EE-1682-4758-BE09-A6F0EECF8184}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>SC__NEBO</RootNamespace>
+    <AssemblyName>SC__NEBO</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Asistente.cs" />
+    <Compile Include="Clases\Auth.cs" />
+    <Compile Include="Clases\Bootstrapper.cs" />
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Clases\DB.cs" />
+    <Compile Include="Clases\Env.cs" />
+    <Compile Include="Formularios\Formularios de Menu\Clientes\Frm_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Clientes\Frm_Clientes.Designer.cs">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Clientes\Frm_Lista_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Clientes\Frm_Lista_Clientes.Designer.cs">
+      <DependentUpon>Frm_Lista_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Cuentas por Cobrar\Frm_Cuentas_Cobrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Cuentas por Cobrar\Frm_Cuentas_Cobrar.Designer.cs">
+      <DependentUpon>Frm_Cuentas_Cobrar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\IHCAFE\Frm_IHCAFE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\IHCAFE\Frm_IHCAFE.Designer.cs">
+      <DependentUpon>Frm_IHCAFE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Liquidacion\Frm_Liquidacion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Liquidacion\Frm_Liquidacion.Designer.cs">
+      <DependentUpon>Frm_Liquidacion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Notas de Peso\Frm_Notas_Peso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Notas de Peso\Frm_Notas_Peso.Designer.cs">
+      <DependentUpon>Frm_Notas_Peso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Reportes\Frm_Reportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Reportes\Frm_Reportes.Designer.cs">
+      <DependentUpon>Frm_Reportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Seguridad\Frm_Seguridad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Seguridad\Frm_Seguridad.Designer.cs">
+      <DependentUpon>Frm_Seguridad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Frm_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Frm_Menu.Designer.cs">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Clientes\Frm_Clientes.resx">
+      <DependentUpon>Frm_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Clientes\Frm_Lista_Clientes.resx">
+      <DependentUpon>Frm_Lista_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Cuentas por Cobrar\Frm_Cuentas_Cobrar.resx">
+      <DependentUpon>Frm_Cuentas_Cobrar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\IHCAFE\Frm_IHCAFE.resx">
+      <DependentUpon>Frm_IHCAFE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Liquidacion\Frm_Liquidacion.resx">
+      <DependentUpon>Frm_Liquidacion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Notas de Peso\Frm_Notas_Peso.resx">
+      <DependentUpon>Frm_Notas_Peso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Reportes\Frm_Reportes.resx">
+      <DependentUpon>Frm_Reportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Seguridad\Frm_Seguridad.resx">
+      <DependentUpon>Frm_Seguridad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Frm_Menu.resx">
+      <DependentUpon>Frm_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\salir32p.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

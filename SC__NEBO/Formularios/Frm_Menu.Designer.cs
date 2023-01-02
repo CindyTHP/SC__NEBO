@@ -63,9 +63,9 @@ namespace SC__NEBO.Formularios
             this.pMenuVertical.Controls.Add(this.btnClientes);
             this.pMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.pMenuVertical.Location = new System.Drawing.Point(0, 0);
-            this.pMenuVertical.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pMenuVertical.Margin = new System.Windows.Forms.Padding(2);
             this.pMenuVertical.Name = "pMenuVertical";
-            this.pMenuVertical.Size = new System.Drawing.Size(140, 355);
+            this.pMenuVertical.Size = new System.Drawing.Size(164, 355);
             this.pMenuVertical.TabIndex = 8;
             // 
             // btnSeguridad
@@ -78,9 +78,9 @@ namespace SC__NEBO.Formularios
             this.btnSeguridad.Image = ((System.Drawing.Image)(resources.GetObject("btnSeguridad.Image")));
             this.btnSeguridad.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnSeguridad.Location = new System.Drawing.Point(0, 325);
-            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeguridad.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeguridad.Name = "btnSeguridad";
-            this.btnSeguridad.Size = new System.Drawing.Size(140, 27);
+            this.btnSeguridad.Size = new System.Drawing.Size(170, 27);
             this.btnSeguridad.TabIndex = 6;
             this.btnSeguridad.Text = "SEGURIDAD";
             this.btnSeguridad.UseVisualStyleBackColor = true;
@@ -95,11 +95,12 @@ namespace SC__NEBO.Formularios
             this.btnIHCAFE.Image = ((System.Drawing.Image)(resources.GetObject("btnIHCAFE.Image")));
             this.btnIHCAFE.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnIHCAFE.Location = new System.Drawing.Point(0, 211);
-            this.btnIHCAFE.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnIHCAFE.Margin = new System.Windows.Forms.Padding(2);
             this.btnIHCAFE.Name = "btnIHCAFE";
-            this.btnIHCAFE.Size = new System.Drawing.Size(140, 27);
+            this.btnIHCAFE.Size = new System.Drawing.Size(162, 27);
             this.btnIHCAFE.TabIndex = 5;
             this.btnIHCAFE.Text = "IHCAFE";
+            this.btnIHCAFE.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnIHCAFE.UseVisualStyleBackColor = true;
             // 
             // btnReporte
@@ -112,22 +113,23 @@ namespace SC__NEBO.Formularios
             this.btnReporte.Image = ((System.Drawing.Image)(resources.GetObject("btnReporte.Image")));
             this.btnReporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnReporte.Location = new System.Drawing.Point(0, 179);
-            this.btnReporte.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnReporte.Margin = new System.Windows.Forms.Padding(2);
             this.btnReporte.Name = "btnReporte";
-            this.btnReporte.Size = new System.Drawing.Size(140, 27);
+            this.btnReporte.Size = new System.Drawing.Size(164, 27);
             this.btnReporte.TabIndex = 4;
             this.btnReporte.Text = "REPORTES";
+            this.btnReporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnReporte.UseVisualStyleBackColor = true;
             // 
             // COAEDCAL
             // 
             this.COAEDCAL.AutoSize = true;
-            this.COAEDCAL.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold);
+            this.COAEDCAL.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.COAEDCAL.ForeColor = System.Drawing.Color.White;
-            this.COAEDCAL.Location = new System.Drawing.Point(9, 6);
+            this.COAEDCAL.Location = new System.Drawing.Point(5, 5);
             this.COAEDCAL.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.COAEDCAL.Name = "COAEDCAL";
-            this.COAEDCAL.Size = new System.Drawing.Size(165, 32);
+            this.COAEDCAL.Size = new System.Drawing.Size(146, 28);
             this.COAEDCAL.TabIndex = 0;
             this.COAEDCAL.Text = "COAEDCAL";
             // 
@@ -141,11 +143,12 @@ namespace SC__NEBO.Formularios
             this.btnLquidación.Image = ((System.Drawing.Image)(resources.GetObject("btnLquidación.Image")));
             this.btnLquidación.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLquidación.Location = new System.Drawing.Point(0, 147);
-            this.btnLquidación.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLquidación.Margin = new System.Windows.Forms.Padding(2);
             this.btnLquidación.Name = "btnLquidación";
-            this.btnLquidación.Size = new System.Drawing.Size(140, 27);
+            this.btnLquidación.Size = new System.Drawing.Size(162, 27);
             this.btnLquidación.TabIndex = 3;
             this.btnLquidación.Text = "LIQUIDACIÓN";
+            this.btnLquidación.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnLquidación.UseVisualStyleBackColor = true;
             // 
             // btnCuentasCobrar
@@ -158,11 +161,12 @@ namespace SC__NEBO.Formularios
             this.btnCuentasCobrar.Image = ((System.Drawing.Image)(resources.GetObject("btnCuentasCobrar.Image")));
             this.btnCuentasCobrar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCuentasCobrar.Location = new System.Drawing.Point(0, 115);
-            this.btnCuentasCobrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCuentasCobrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCuentasCobrar.Name = "btnCuentasCobrar";
-            this.btnCuentasCobrar.Size = new System.Drawing.Size(140, 27);
+            this.btnCuentasCobrar.Size = new System.Drawing.Size(164, 27);
             this.btnCuentasCobrar.TabIndex = 2;
             this.btnCuentasCobrar.Text = "    C. POR COBRAR";
+            this.btnCuentasCobrar.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnCuentasCobrar.UseVisualStyleBackColor = true;
             // 
             // btnNotaPeso
@@ -175,11 +179,12 @@ namespace SC__NEBO.Formularios
             this.btnNotaPeso.Image = ((System.Drawing.Image)(resources.GetObject("btnNotaPeso.Image")));
             this.btnNotaPeso.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNotaPeso.Location = new System.Drawing.Point(0, 83);
-            this.btnNotaPeso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNotaPeso.Margin = new System.Windows.Forms.Padding(2);
             this.btnNotaPeso.Name = "btnNotaPeso";
-            this.btnNotaPeso.Size = new System.Drawing.Size(140, 27);
+            this.btnNotaPeso.Size = new System.Drawing.Size(164, 27);
             this.btnNotaPeso.TabIndex = 1;
             this.btnNotaPeso.Text = "   NOTAS DE PESO";
+            this.btnNotaPeso.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnNotaPeso.UseVisualStyleBackColor = true;
             this.btnNotaPeso.Click += new System.EventHandler(this.btnNotaPeso_Click);
             // 
@@ -193,11 +198,12 @@ namespace SC__NEBO.Formularios
             this.btnClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnClientes.Image")));
             this.btnClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnClientes.Location = new System.Drawing.Point(0, 51);
-            this.btnClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClientes.Margin = new System.Windows.Forms.Padding(2);
             this.btnClientes.Name = "btnClientes";
-            this.btnClientes.Size = new System.Drawing.Size(140, 27);
+            this.btnClientes.Size = new System.Drawing.Size(164, 27);
             this.btnClientes.TabIndex = 0;
             this.btnClientes.Text = "CLIENTES";
+            this.btnClientes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnClientes.UseVisualStyleBackColor = true;
             this.btnClientes.Click += new System.EventHandler(this.btnClientes_Click);
             // 
@@ -208,10 +214,10 @@ namespace SC__NEBO.Formularios
             this.panel2.Controls.Add(this.pbSalir);
             this.panel2.Controls.Add(this.pbMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(140, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Location = new System.Drawing.Point(164, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(543, 27);
+            this.panel2.Size = new System.Drawing.Size(519, 27);
             this.panel2.TabIndex = 9;
             // 
             // pbMinimizar
@@ -219,8 +225,8 @@ namespace SC__NEBO.Formularios
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(485, 5);
-            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMinimizar.Location = new System.Drawing.Point(461, 5);
+            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(18, 18);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -232,8 +238,8 @@ namespace SC__NEBO.Formularios
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(517, 5);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSalir.Location = new System.Drawing.Point(493, 5);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(18, 18);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -245,7 +251,7 @@ namespace SC__NEBO.Formularios
             // 
             this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
             this.pbMenu.Location = new System.Drawing.Point(4, 1);
-            this.pbMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pbMenu.Name = "pbMenu";
             this.pbMenu.Size = new System.Drawing.Size(26, 26);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -262,7 +268,7 @@ namespace SC__NEBO.Formularios
             this.Controls.Add(this.pMenuVertical);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pMenuVertical.ResumeLayout(false);

@@ -196,62 +196,66 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             txtNombre.Focus();
         }
 
-        private void GetDocente(string search = "")
-        {
-            string campos, condicion;
-            campos = "IDDOCENTE, NOMBRE + ' ' + APELLIDOS, DIRECCION";
+        //private void GetDocente(string search = "")
+        //{
+        //    string campos, condicion;
+        //    campos = "IDDOCENTE, NOMBRE + ' ' + APELLIDOS, DIRECCION";
 
-            if (search != "")
-            {
-                condicion = "NOMBRE LIKE '%" + search + "%' AND DEL = 'N'";
+        //    if (search != "")
+        //    {
+        //        condicion = "NOMBRE LIKE '%" + search + "%' AND DEL = 'N'";
 
-            }
-            else
-            {
-                condicion = "DEL = 'N'";
-            }
+        //    }
+        //    else
+        //    {
+        //        condicion = "DEL = 'N'";
+        //    }
 
-            DataTable data = db.Find("DOCENTES", campos, condicion);
+        //    DataTable data = db.Find("DOCENTES", campos, condicion);
 
-            DgvData.Rows.Clear();
+        //    DgvData.Rows.Clear();
 
-            int i;
-            string _iddocente, _docente, _direccion;
+        //    int i;
+        //    string _iddocente, _docente, _direccion;
 
-            for (i = 0; i < data.Rows.Count; i++)
-            {
-                iddocente = data.Rows[i][0].ToString();
-                _docente = data.Rows[i][1].ToString();
-                _direccion = data.Rows[i][2].ToString();
-                DgvData.Rows.Add(iddocente, _docente, _direccion);
-            }
+        //    for (i = 0; i < data.Rows.Count; i++)
+        //    {
+        //        iddocente = data.Rows[i][0].ToString();
+        //        _docente = data.Rows[i][1].ToString();
+        //        _direccion = data.Rows[i][2].ToString();
+        //        DgvData.Rows.Add(iddocente, _docente, _direccion);
+        //    }
 
-            lblResumen.Text = "Mostrando " + data.Rows.Count.ToString() + "registros de " + db.Count("DOCENTES", "DEL = 'N'").ToString();
-            data.Dispose();
-        }
+        //    lblResumen.Text = "Mostrando " + data.Rows.Count.ToString() + "registros de " + db.Count("DOCENTES", "DEL = 'N'").ToString();
+        //    data.Dispose();
+        //}
 
         private void Boot()
         {
-            BtnNuevo.Enabled = Clases.Auth.save == "S" ? true : false;
-            BtnGuardar.Enabled = false;
-            BtnActualizar.Enabled = false;
-            BtnEliminar.Enabled = false;
-            BtnCancelar.Enabled = false;
-            BtnSalir.Enabled = true;
+            btnNuevo.Enabled = Clases.Auth.save == "S" ? true : false;
+            btnGuardar.Enabled = false;
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = false;
+            pbSalir.Enabled = true;
 
-            txtIdDocente.Enabled = false;
+            txtIdCliente.Enabled = false;
             txtNombre.Enabled = false;
-            txtApellidos.Enabled = false;
+            txtApellido.Enabled = false;
             txtDireccion.Enabled = false;
+            txtDNI.Enabled = false;
+            txtRTN.Enabled = false;
+            cmbEstadoCivil.Enabled = false;
+            txtComunidad.Enabled = false;
+            txtClaveIHCAFE.Enabled = false;
             txtTelefono.Enabled = false;
-            txtCorreo.Enabled = false;
-            txtDetalles.Enabled = false;
+            txtMunicipio.Enabled = false;
 
             lblMsg.Visible = false;
 
-            DgvData.Rows.Clear();
-            txtBuscar.Clear();
-            txtBuscar.Focus();
+            //DgvData.Rows.Clear();
+            //txtBuscar.Clear();
+            //txtBuscar.Focus();
 
         }
 

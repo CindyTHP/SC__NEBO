@@ -41,7 +41,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.DcDNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DcRTN = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DcDireccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DcEstado = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
@@ -57,8 +56,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.panel2.Controls.Add(this.pbMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1357, 41);
+            this.panel2.Size = new System.Drawing.Size(1194, 27);
             this.panel2.TabIndex = 14;
             // 
             // pbMinimizar
@@ -66,9 +66,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(1270, 7);
+            this.pbMinimizar.Location = new System.Drawing.Point(1136, 5);
+            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(27, 27);
+            this.pbMinimizar.Size = new System.Drawing.Size(18, 18);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMinimizar.TabIndex = 2;
             this.pbMinimizar.TabStop = false;
@@ -78,9 +79,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(1318, 7);
+            this.pbSalir.Location = new System.Drawing.Point(1168, 5);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(27, 27);
+            this.pbSalir.Size = new System.Drawing.Size(18, 18);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbSalir.TabIndex = 1;
             this.pbSalir.TabStop = false;
@@ -89,9 +91,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // pbMenu
             // 
             this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
-            this.pbMenu.Location = new System.Drawing.Point(6, 1);
+            this.pbMenu.Location = new System.Drawing.Point(4, 1);
+            this.pbMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pbMenu.Name = "pbMenu";
-            this.pbMenu.Size = new System.Drawing.Size(39, 39);
+            this.pbMenu.Size = new System.Drawing.Size(26, 26);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMenu.TabIndex = 0;
             this.pbMenu.TabStop = false;
@@ -112,9 +115,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.DcNombre,
             this.DcDNI,
             this.DcRTN,
-            this.DcDireccion,
-            this.DcEstado});
-            this.DgvData.Location = new System.Drawing.Point(12, 63);
+            this.DcDireccion});
+            this.DgvData.Location = new System.Drawing.Point(8, 42);
+            this.DgvData.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DgvData.Name = "DgvData";
             this.DgvData.ReadOnly = true;
             this.DgvData.RowHeadersWidth = 5;
@@ -126,7 +129,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.DgvData.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvData.RowTemplate.Height = 28;
             this.DgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvData.Size = new System.Drawing.Size(1333, 514);
+            this.DgvData.Size = new System.Drawing.Size(1170, 364);
             this.DgvData.TabIndex = 37;
             // 
             // dcIDSocio
@@ -135,7 +138,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.dcIDSocio.MinimumWidth = 8;
             this.dcIDSocio.Name = "dcIDSocio";
             this.dcIDSocio.ReadOnly = true;
-            this.dcIDSocio.Width = 150;
+            this.dcIDSocio.Width = 135;
             // 
             // DcNombre
             // 
@@ -169,22 +172,16 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.DcDireccion.ReadOnly = true;
             this.DcDireccion.Width = 320;
             // 
-            // DcEstado
-            // 
-            this.DcEstado.HeaderText = "ESTADO";
-            this.DcEstado.MinimumWidth = 8;
-            this.DcEstado.Name = "DcEstado";
-            this.DcEstado.ReadOnly = true;
-            // 
             // Frm_Lista_Clientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1357, 635);
+            this.ClientSize = new System.Drawing.Size(1194, 529);
             this.Controls.Add(this.DgvData);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Frm_Lista_Clientes";
             this.Text = "Frm_Lista_Clientes";
             this.panel2.ResumeLayout(false);
@@ -208,6 +205,5 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         private System.Windows.Forms.DataGridViewTextBoxColumn DcDNI;
         private System.Windows.Forms.DataGridViewTextBoxColumn DcRTN;
         private System.Windows.Forms.DataGridViewTextBoxColumn DcDireccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DcEstado;
     }
 }

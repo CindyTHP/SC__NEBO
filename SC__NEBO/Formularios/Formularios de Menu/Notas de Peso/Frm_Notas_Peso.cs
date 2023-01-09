@@ -28,5 +28,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             menu.Show();
             this.Hide();
         }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

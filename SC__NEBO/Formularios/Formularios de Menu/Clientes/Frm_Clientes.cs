@@ -74,9 +74,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
                     if (db.Save("CLIENTES", campos, valores) > 0)
                     {
-                        db.RawSQL(q);
+                        //db.RawSQL(query);
                         a.Aprueba("EL CLIENTE " + apellido + " HA SIDO REGISTRADO CON ÉXITO!");
-                        db.SetLast(idcorre);
+                        //db.SetLast(idcorre);
                         Clear();
                         Boot();
                     }
@@ -89,13 +89,14 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             txtIdCliente.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
-            txtRTN.Clear();
-            txtDNI.Clear();
             txtDireccion.Clear();
-            txtClaveIHCAFE.Clear();
+            txtDNI.Clear();
+            txtRTN.Clear();
+            cmbEstadoCivil.SelectedIndex = -1;
             txtComunidad.Clear();
-            txtMunicipio.Clear();
+            txtClaveIHCAFE.Clear();
             txtTelefono.Clear();
+            txtMunicipio.Clear();
         }
 
         public void ValidateData()
@@ -104,12 +105,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             idcliente = a.Clean(txtIdCliente.Text.Trim());
             nombre = a.Clean(txtNombre.Text.Trim());
             apellido = a.Clean(txtApellido.Text.Trim());
-            rtn = a.Clean(txtRTN.Text.Trim());
-            dni = a.Clean(txtDNI.Text.Trim());
             direccion = a.Clean(txtDireccion.Text.Trim());
-            telefono = txtTelefono.Text.Trim();
-            claveihcafe = a.Clean(txtClaveIHCAFE.Text.Trim());
+            dni = a.Clean(txtDNI.Text.Trim());
+            rtn = a.Clean(txtRTN.Text.Trim());
+            estadocivil= a.Clean(cmbEstadoCivil.Text.Trim());
             comunidad = a.Clean(txtComunidad.Text.Trim());
+            claveihcafe = a.Clean(txtClaveIHCAFE.Text.Trim());
+            telefono = txtTelefono.Text.Trim();
             municipio = a.Clean(txtMunicipio.Text.Trim());
 
             if (idcliente.Length == 0)
@@ -123,7 +125,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (nombre.Length == 0)
             {
-                h.Warning("INGRESAR EL NOMBRE DEL CLIENTE!");
+                a.Advertencia("INGRESAR EL NOMBRE DEL CLIENTE!");
                 txtNombre.Text = "";
                 txtNombre.Focus();
                 errors++;
@@ -131,42 +133,73 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (apellido.Length == 0)
             {
-                h.Warning("INGRESAR EL APELLIDO DEL CLIENTE!");
-                txtApellidos.Text = "";
-                txtApellidos.Focus();
+                a.Advertencia("INGRESAR EL APELLIDO DEL CLIENTE!");
+                txtApellido.Text = "";
+                txtApellido.Focus();
                 errors++;
             }
 
             if (direccion.Length == 0)
             {
-                h.Warning("INGRESAR LA DIRECCION!");
+                a.Advertencia("INGRESAR LA DIRECCION!");
                 txtDireccion.Text = "";
                 txtDireccion.Focus();
                 errors++;
             }
 
+            if (dni.Length == 0)
+            {
+                a.Advertencia("INGRESAR EL DNI DEL CLIENTE!");
+                txtDNI.Text = "";
+                txtDNI.Focus();
+                errors++;
+            }
+
+            if (rtn.Length == 0)
+            {
+                a.Advertencia("INGRESAR EL RTN DEL CLIENTE!");
+                txtRTN.Text = "";
+                txtRTN.Focus();
+                errors++;
+            }
+
+            if (estadocivil.Length == 0)
+            {
+                a.Advertencia("SELECCIONE EL ESTADO CIVIL DEL CLIENTE!");
+                cmbEstadoCivil.Text = "";
+                cmbEstadoCivil.Focus();
+                errors++;
+            }
+            if (comunidad.Length == 0)
+            {
+                a.Advertencia("INGRESE LA COMUNIDAD EN LA QUE RESIDE DEL CLIENTE!");
+                txtComunidad.Text = "";
+                txtComunidad.Focus();
+                errors++;
+            }
+
+            if (claveihcafe.Length == 0)
+            {
+                a.Advertencia("INGRESAR EL RTN DEL CLIENTE!");
+                txtClaveIHCAFE.Text = "";
+                txtClaveIHCAFE.Focus();
+                errors++;
+            }
+
             if (txtTelefono.MaskFull == false)
             {
-                h.Warning("INGRESAR EL NUMERO DE TELEFONO!");
+                a.Advertencia("INGRESAR EL NUMERO DE TELEFONO!");
                 txtTelefono.Text = telefono;
                 txtTelefono.Focus();
                 errors++;
                 return;
             }
 
-            if (correo.Length == 0)
+            if (municipio.Length == 0)
             {
-                h.Warning("INGRESAR EL CORREO ELECTRONICO!");
-                txtCorreo.Text = "";
-                txtCorreo.Focus();
-                errors++;
-            }
-
-            if (detalles.Length == 0)
-            {
-                h.Warning("INGRESAR EL NOMBRE DEL RECTOR!");
-                txtDetalles.Text = "";
-                txtDetalles.Focus();
+                a.Advertencia("INGRESAR EL CORREO ELECTRONICO!");
+                txtComunidad.Text = "";
+                txtComunidad.Focus();
                 errors++;
             }
 
@@ -190,8 +223,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             cmbEstadoCivil.Enabled = true;
             txtComunidad.Enabled = true;
             txtClaveIHCAFE.Enabled = true;
-            txtMunicipio.Enabled = true;
             txtTelefono.Enabled = true;
+            txtMunicipio.Enabled = true;
 
             txtNombre.Focus();
         }
@@ -261,44 +294,55 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
         private void GetInfoDocente(string id)
         {
-            string condicion = "IDDOCENTE ='" + id + "' AND DEL = 'N'";
-            DataTable campus = db.Find("DOCENTES", "*", condicion);
+            string condicion = "IDCLIENTE ='" + id + "' AND ESTADO = 'ACTIVO'";
+            DataTable cliente = db.Find("CLIENTES", "*", condicion);
 
-            if (campus.Rows.Count > 0)
+            if (cliente.Rows.Count > 0)
             {
-                BtnNuevo.Enabled = false;
-                BtnGuardar.Enabled = false;
-                BtnActualizar.Enabled = Clases.Auth.update == "S" ? true : false;
-                BtnEliminar.Enabled = Clases.Auth.delete == "S" ? true : false;
-                BtnCancelar.Enabled = true;
-                BtnSalir.Enabled = false;
+                btnNuevo.Enabled = false;
+                btnGuardar.Enabled = false;
+                btnActualizar.Enabled = Clases.Auth.update == "S" ? true : false;
+                btnEliminar.Enabled = Clases.Auth.delete == "S" ? true : false;
+                btnCancelar.Enabled = true;
+                pbSalir.Enabled = false;
 
-
-                DataRow info = campus.Rows[0];
-                txtIdDocente.Text = info["IDDOCENTE"].ToString();
-                txtNombre.Text = info["NOMBRE"].ToString();
-                txtApellidos.Text = info["APELLIDOS"].ToString();
+                DataRow info = cliente.Rows[0];
+                txtIdCliente.Text = info["IDCLIENTE"].ToString();
+                txtNombre.Text = info["NOMBRES"].ToString();
+                txtApellido.Text = info["APELLIDOS"].ToString();
                 txtDireccion.Text = info["DIRECCION"].ToString();
+                txtDNI.Text = info["DNI"].ToString();
+                txtRTN.Text = info["RTN"].ToString();
+                cmbEstadoCivil.Text = info["ESTADO_CIVIL"].ToString();
+                txtComunidad.Text = info["COMUNIDAD"].ToString();
+                txtClaveIHCAFE.Text = info["CLAVE_IHCAFE"].ToString();
                 txtTelefono.Text = info["TELEFONO"].ToString();
-                txtCorreo.Text = info["CORREO"].ToString();
-                txtDetalles.Text = info["DETALLES"].ToString();
+                txtMunicipio.Text = info["MUNICIPIO"].ToString();
+                //txtDetalles.Text = info["DETALLES"].ToString();
 
-                txtIdDocente.Enabled = false;
+                txtIdCliente.Enabled = false;
                 txtNombre.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtApellidos.Enabled = Clases.Auth.update == "S" ? true : false;
+                txtApellido.Enabled = Clases.Auth.update == "S" ? true : false;
                 txtDireccion.Enabled = Clases.Auth.update == "S" ? true : false;
+
+                txtDNI.Enabled = Clases.Auth.update == "S" ? true : false;
+                txtRTN.Enabled = Clases.Auth.update == "S" ? true : false;
+                cmbEstadoCivil.Enabled = Clases.Auth.update == "S" ? true : false;
+                txtComunidad.Enabled = Clases.Auth.update == "S" ? true : false;
+                txtClaveIHCAFE.Enabled = Clases.Auth.update == "S" ? true : false;
                 txtTelefono.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtCorreo.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtDetalles.Enabled = Clases.Auth.update == "S" ? true : false;
+                txtMunicipio.Enabled = Clases.Auth.update == "S" ? true : false;
+
+                //txtDetalles.Enabled = Clases.Auth.update == "S" ? true : false;
 
                 lblMsg.Visible = false;
             }
             else
             {
-                h.Warning("ERROR AL RECUPERAR LOS DATOS DEL REGISTRO SELECCIONADO!");
+                a.Advertencia("ERROR AL RECUPERAR LOS DATOS DEL REGISTRO SELECCIONADO!");
             }
 
-            campus.Dispose();
+            cliente.Dispose();
         }
 
         private void txtIdCliente_Validating(object sender, CancelEventArgs e)

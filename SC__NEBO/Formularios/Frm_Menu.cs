@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace SC__NEBO.Formularios
 {
@@ -17,15 +18,6 @@ namespace SC__NEBO.Formularios
             InitializeComponent();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void pbSalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
 
         private void btnNotaPeso_Click(object sender, EventArgs e)
         {
@@ -40,6 +32,43 @@ namespace SC__NEBO.Formularios
             Formularios.Formularios_de_Menu.Clientes.Frm_Clientes form = new Formularios_de_Menu.Clientes.Frm_Clientes();
             this.AddOwnedForm(form);
             form.Show();
+        }
+
+        private void Frm_Menu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Está seguro de cerrar?", "Alerta", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void pbMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnClientes_Click_1(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Clientes.Frm_Clientes form = new Formularios_de_Menu.Clientes.Frm_Clientes();
+            this.AddOwnedForm(form);
+            form.Show();
+        }
+
+        private void btnNotaPeso_Click_1(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Notas_de_Peso.Frm_Notas_Peso form = new Formularios_de_Menu.Notas_de_Peso.Frm_Notas_Peso();
+            this.AddOwnedForm(form);
+            form.Show();
+        }
+
+        private void btnIHCAFE_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

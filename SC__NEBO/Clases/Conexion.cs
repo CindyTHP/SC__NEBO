@@ -20,16 +20,17 @@ namespace SC__NEBO.Clases
         {
             cadena_de_conexion = @"Server=" + Env.SERVER + ";Database=" + Env.DB + ";User Id=" + Env.USER + ";Password=" + Env.PASS + ";";
             Con = new SqlConnection(cadena_de_conexion);
+            
         }
 
-
+        
         public void OpenConnection()
         {
             try
             {
-
+                h.Advertencia(Env.SERVER);
                 Con.Open();
-
+                
             }
             catch (SqlException error)
             {

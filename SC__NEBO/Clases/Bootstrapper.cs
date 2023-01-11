@@ -15,7 +15,7 @@ namespace SC__NEBO.Clases
 
         public void CheckFileConfiguration()
         {
-            string path = @"C:\DataApp\Configuracion.accdb";
+            string path = @"C:\DataApp\Configuration.accdb";
 
             if (File.Exists(path))
             {
@@ -31,7 +31,7 @@ namespace SC__NEBO.Clases
 
         private void ReadConfiguration()
         {
-            string Cadena_Conexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\DataApp\Configuracion.accdb;Jet OLEDB:Database Password=123;";
+            string Cadena_Conexion = @"Provider=Microsoft.ACE.OLEDB.4.0;Data Source=C:\DataApp\Configuration.accdb;Jet OLEDB:Database Password=123;";
 
             OleDbConnection ConAccess = new OleDbConnection(Cadena_Conexion);
 
@@ -53,10 +53,12 @@ namespace SC__NEBO.Clases
 
                     Clases.Conexion.SetConfigurationServer();
 
+                    a.Advertencia(Clases.Env.SERVER);
+
                 }
                 else
                 {
-                    a.Advertencia("ERROR AL CARGAR LOS DATO DE CONFIGURACION", "ERROR");
+                    a.Advertencia("ERROR AL CARGAR LOS DATOS DE CONFIGURACION", "ERROR");
                     Application.Exit();
                 }
 

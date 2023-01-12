@@ -11,7 +11,7 @@ using System.Data.SqlClient;
 
 namespace SC__NEBO.Clases
 {
-    class DB:Conexion
+    class DB : Conexion
     {
         Clases.Asistente a = new Clases.Asistente();
 

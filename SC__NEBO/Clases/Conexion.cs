@@ -28,7 +28,6 @@ namespace SC__NEBO.Clases
         {
             try
             {
-                h.Advertencia(Env.SERVER);
                 Con.Open();
                 
             }

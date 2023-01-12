@@ -16,7 +16,7 @@ namespace SC__NEBO
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Formularios.Frm_Menu());
+            Application.Run(new Formularios.Login.FrmLogin());
         }
     }
 }

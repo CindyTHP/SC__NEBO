@@ -31,18 +31,18 @@ namespace SC__NEBO.Clases
 
         private void ReadConfiguration()
         {
-            string Cadena_Conexion = @"Provider=Microsoft.ACE.OLEDB.4.0;Data Source=C:\DataApp\Configuration.accdb;Jet OLEDB:Database Password=123;";
+            string cadena_conexion = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\DataApp\Configuration.accdb;Jet OLEDB:Database Password=123;";
 
-            OleDbConnection ConAccess = new OleDbConnection(Cadena_Conexion);
+            OleDbConnection ConAccess = new OleDbConnection(cadena_conexion);
 
             try
             {
                 string query = "SELECT * FROM INFOSERVER";
-                OleDbCommand con = new OleDbCommand(query, ConAccess);
+                OleDbCommand com = new OleDbCommand(query, ConAccess);
                 ConAccess.Open();
                 OleDbDataReader reader;
 
-                reader = con.ExecuteReader();
+                reader = com.ExecuteReader();
 
                 if (reader.Read())
                 {
@@ -53,8 +53,6 @@ namespace SC__NEBO.Clases
 
                     Clases.Conexion.SetConfigurationServer();
 
-                    a.Advertencia(Clases.Env.SERVER);
-
                 }
                 else
                 {
@@ -64,13 +62,12 @@ namespace SC__NEBO.Clases
 
                 //Liberacion del recursos
                 reader.Close();
-                con.Dispose();
+                com.Dispose();
                 ConAccess.Close();
             }
             catch (OleDbException error)
             {
                 a.Advertencia(error.Message);
-                throw;
             }
         }
     }

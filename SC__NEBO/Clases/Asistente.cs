@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace SC__NEBO.Clases
 {
@@ -68,6 +69,27 @@ namespace SC__NEBO.Clases
                 double_value = 0;
             }
             return double_value;
+        }
+
+        public Boolean OnlyNumbers(KeyPressEventArgs e)
+        {
+            Boolean resp = false;
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar == (char)8)
+            {
+                resp = true;
+            }
+            return resp;
+        }
+
+        public Boolean Money(KeyPressEventArgs e)
+        {
+            Boolean resp = false;
+            CultureInfo cc = System.Threading.Thread.CurrentThread.CurrentCulture;
+            if (Char.IsNumber(e.KeyChar) || e.KeyChar.ToString() == cc.NumberFormat.NumberDecimalSeparator)
+            {
+                resp = true;
+            }
+            return resp;
         }
     }
 }

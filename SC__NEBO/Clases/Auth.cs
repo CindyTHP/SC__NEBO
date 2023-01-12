@@ -42,8 +42,8 @@ namespace SC__NEBO.Clases
                 string campos, valores, hash;
                 hash = MakeHash("123456");
                 campos = "USUARIO, CLAVE, NOMBRE, CORREO, FECHANAC, SEXO, ROL";
-                valores = "'Admin','" + hash + "','J. Samuel Aguilar','samu3laguilar@gmail.com'," +
-                    "'05/10/1998','HOMBRE','ADMINISTRADOR'";
+                valores = "'Admin','" + hash + "','CINDY PINEDA','cindypineda262@gmail.com'," +
+                    "'05/12/2001','MUJER','ADMINISTRADOR'";
 
                 if (db.Save("USUARIOS", campos, valores) > 0)
                 {

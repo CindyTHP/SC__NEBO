@@ -33,5 +33,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
         {
 
         }
+
+        private void Frm_Notas_Peso_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

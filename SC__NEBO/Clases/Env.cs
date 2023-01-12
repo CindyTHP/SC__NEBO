@@ -8,7 +8,7 @@ namespace SC__NEBO.Clases
 {
     class Env
     {
-        public static string APPNAME = "SIIIIIIUU | ";
+        public static string APPNAME = "SISTEMA DE CONTROL DE CALIDAD | ";
         public static string SERVER;
         public static string USER;
         public static string PASS;

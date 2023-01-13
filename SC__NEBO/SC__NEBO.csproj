@@ -34,8 +34,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -53,6 +57,12 @@
     <Compile Include="Clases\Conexion.cs" />
     <Compile Include="Clases\DB.cs" />
     <Compile Include="Clases\Env.cs" />
+    <Compile Include="Formularios\Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Formularios de Menu\Clientes\Frm_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -121,6 +131,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios de Menu\Clientes\Frm_Clientes.resx">
       <DependentUpon>Frm_Clientes.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +177,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -177,7 +191,79 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Iconos\account.png" />
+    <Content Include="Iconos\agregar-archivo_24px.png" />
+    <Content Include="Iconos\agregar32px.png" />
+    <Content Include="Iconos\bloquear.png" />
+    <Content Include="Iconos\buscar-16p.png" />
+    <Content Include="Iconos\buscar16px.png" />
+    <Content Include="Iconos\buscar24px.png" />
+    <Content Include="Iconos\calendar.png" />
+    <Content Include="Iconos\cancelar %2816px%29.png" />
+    <Content Include="Iconos\cancelar.png" />
+    <Content Include="Iconos\cancelar32px.png" />
+    <Content Include="Iconos\Cancelar_24pxpng.png" />
+    <Content Include="Iconos\clave.png" />
+    <Content Include="Iconos\cliente24px.png" />
+    <Content Include="Iconos\cliente32px.png" />
+    <Content Include="Iconos\clientes24px.png" />
+    <Content Include="Iconos\configuracion32px.png" />
+    <Content Include="Iconos\Delete_24px.png" />
+    <Content Include="Iconos\editar.png" />
+    <Content Include="Iconos\editar24p.png" />
+    <Content Include="Iconos\editar32p.png" />
+    <Content Include="Iconos\Editar_24px.png" />
+    <Content Include="Iconos\eliminar24p.png" />
+    <Content Include="Iconos\eliminar24px.png" />
+    <Content Include="Iconos\eliminar32p.png" />
+    <Content Include="Iconos\eliminar_32px.png" />
+    <Content Include="Iconos\error32px.png" />
+    <Content Include="Iconos\error_32px.png" />
+    <Content Include="Iconos\Factura_24px.png" />
+    <Content Include="Iconos\Gabriel-Leblanc-Historic-Mac-Mac.ico" />
+    <Content Include="Iconos\grupos.png" />
+    <Content Include="Iconos\guardar-archivo32px.png" />
+    <Content Include="Iconos\guardar-el-archivo32px.png" />
+    <Content Include="Iconos\guardar-el-archivo_24px.png" />
+    <Content Include="Iconos\guardar24p.png" />
+    <Content Include="Iconos\guardar32p.png" />
+    <Content Include="Iconos\guardarinfo32px.png" />
+    <Content Include="Iconos\Guardar_24px.png" />
+    <Content Include="Iconos\iconooP.ico" />
+    <Content Include="Iconos\incorrecto32px.png" />
+    <Content Include="Iconos\informe-de-ganancias32px.png" />
+    <Content Include="Iconos\ingresos32px.png" />
+    <Content Include="Iconos\listaclientes32px.png" />
+    <Content Include="Iconos\listaclientes_32px.png" />
+    <Content Include="Iconos\menu-de-puntos %281%29.png" />
+    <Content Include="Iconos\menu-de-puntos %282%29.png" />
+    <Content Include="Iconos\menu-de-puntos %283%29.png" />
+    <Content Include="Iconos\menu-de-puntos.png" />
+    <Content Include="Iconos\menu_32PX.png" />
+    <Content Include="Iconos\minimizar-signo32p.png" />
+    <Content Include="Iconos\nota232px.png" />
+    <Content Include="Iconos\notas32px.png" />
+    <Content Include="Iconos\nueva-pagina32p.png" />
+    <Content Include="Iconos\Nuevo.png" />
+    <Content Include="Iconos\nuevo24p.png" />
+    <Content Include="Iconos\nuevo32px.png" />
+    <Content Include="Iconos\pago-en-efectivo32px.png" />
+    <Content Include="Iconos\papelera-de-reciclaje.png" />
+    <Content Include="Iconos\recibo32px.png" />
+    <Content Include="Iconos\regresar24px.png" />
+    <Content Include="Iconos\Regresar_24px.png" />
+    <Content Include="Iconos\regresar_op2_24px.png" />
+    <Content Include="Iconos\regreso32px.png" />
+    <Content Include="Iconos\salir.png" />
+    <Content Include="Iconos\salir24p.png" />
+    <Content Include="Iconos\salir32p.png" />
+    <Content Include="Iconos\salvar.png" />
+    <Content Include="Iconos\semilla-de-cafe32px.png" />
+    <Content Include="Iconos\update32px.png" />
+    <Content Include="Iconos\usuario.png" />
+    <Content Include="Iconos\usuario_32px.png" />
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\salir32p.png" />
   </ItemGroup>

@@ -67,14 +67,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             {
                 if (a.Pregunta(msg) == true)
                 {
-                    string campos = "ID_CLIENTE, NOMBRES, APELLIDOS, RTN, DIRECCION, TELEFONO, ESTADO_CIVIL, CLAVE_IHCAFE, COMUNIDAD, MUNICIPIO";
+                    string campos = "ID_CLIENTE, NOMBRES, APELLIDOS,DNI, RTN, DIRECCION, TELEFONO, ESTADO_CIVIL, CLAVE_IHCAFE, COMUNIDAD, MUNICIPIO";
 
-                    string valores = "'" + idcliente + "', '" + nombre + "','" + apellido + "', '"+ rtn +"','" + direccion + "','" + telefono + "', '" + estadocivil + "', '" + claveihcafe + "', '"+comunidad+"','"+municipio+"'";
+                    string valores = "'" + idcliente + "', '" + nombre + "','" + apellido + "','" + dni + "', '" + rtn +"','" + direccion + "','" + telefono + "', '" + estadocivil + "', '" + claveihcafe + "', '"+comunidad+"','"+municipio+"'";
 
 
                     if (db.Save("CLIENTES", campos, valores) > 0)
                     {
                         //db.RawSQL(query);
+                        db.SetLast("CLIENT");
                         a.Aprueba("EL CLIENTE " + apellido + " HA SIDO REGISTRADO CON ÉXITO!");
                         //db.SetLast(idcorre);
                         Clear();
@@ -214,7 +215,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             btnCancelar.Enabled = true;
             btnRegresar.Enabled = false;
 
-            txtIdCliente.Enabled = true;
+            txtIdCliente.Text = "CLT" + db.GetNext("CLIEN");
+
+            txtIdCliente.Enabled = false;
             txtNombre.Enabled = true;
             txtApellido.Enabled = true;
             txtDireccion.Enabled = true;
@@ -422,7 +425,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
         private void Frm_Clientes_Load(object sender, EventArgs e)
         {
-
+            Boot();
         }
         
     }

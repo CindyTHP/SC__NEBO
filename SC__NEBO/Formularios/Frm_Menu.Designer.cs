@@ -40,15 +40,15 @@ namespace SC__NEBO.Formularios
             this.btnClientes = new System.Windows.Forms.Button();
             this.btnReporte = new System.Windows.Forms.Button();
             this.btnNotaPeso = new System.Windows.Forms.Button();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
+            this.BtnConfiguracion = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel2
@@ -225,6 +225,34 @@ namespace SC__NEBO.Formularios
             this.btnNotaPeso.UseVisualStyleBackColor = false;
             this.btnNotaPeso.Click += new System.EventHandler(this.btnNotaPeso_Click_1);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.BtnConfiguracion);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 359);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(219, 64);
+            this.panel1.TabIndex = 14;
+            // 
+            // BtnConfiguracion
+            // 
+            this.BtnConfiguracion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.BtnConfiguracion.FlatAppearance.BorderSize = 0;
+            this.BtnConfiguracion.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.BtnConfiguracion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnConfiguracion.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.BtnConfiguracion.ForeColor = System.Drawing.Color.White;
+            this.BtnConfiguracion.Image = ((System.Drawing.Image)(resources.GetObject("BtnConfiguracion.Image")));
+            this.BtnConfiguracion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnConfiguracion.Location = new System.Drawing.Point(2, 18);
+            this.BtnConfiguracion.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnConfiguracion.Name = "BtnConfiguracion";
+            this.BtnConfiguracion.Size = new System.Drawing.Size(215, 44);
+            this.BtnConfiguracion.TabIndex = 14;
+            this.BtnConfiguracion.Text = "CONFIGURACIÓN";
+            this.BtnConfiguracion.UseVisualStyleBackColor = false;
+            this.BtnConfiguracion.Click += new System.EventHandler(this.BtnConfiguracion_Click);
+            // 
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.SystemColors.Control;
@@ -236,33 +264,6 @@ namespace SC__NEBO.Formularios
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox3.TabIndex = 11;
             this.pictureBox3.TabStop = false;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 359);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(219, 64);
-            this.panel1.TabIndex = 14;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(2, 18);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(219, 44);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "SEGURIDAD";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // Frm_Menu
             // 
@@ -284,8 +285,8 @@ namespace SC__NEBO.Formularios
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -303,6 +304,6 @@ namespace SC__NEBO.Formularios
         private System.Windows.Forms.Button btnNotaPeso;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnConfiguracion;
     }
 }

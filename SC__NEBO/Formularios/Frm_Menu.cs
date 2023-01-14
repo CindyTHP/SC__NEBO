@@ -70,5 +70,12 @@ namespace SC__NEBO.Formularios
         {
 
         }
+
+        private void BtnConfiguracion_Click(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Config.FrmInfoGral frm = new Formularios_de_Menu.Config.FrmInfoGral();
+            this.AddOwnedForm(frm);
+            frm.Show();
+        }
     }
 }

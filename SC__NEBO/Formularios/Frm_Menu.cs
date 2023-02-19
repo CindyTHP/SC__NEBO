@@ -13,11 +13,11 @@ namespace SC__NEBO.Formularios
 {
     public partial class Frm_Menu : Form
     {
+
         public Frm_Menu()
         {
             InitializeComponent();
         }
-
 
         private void btnNotaPeso_Click(object sender, EventArgs e)
         {
@@ -68,7 +68,9 @@ namespace SC__NEBO.Formularios
 
         private void btnIHCAFE_Click(object sender, EventArgs e)
         {
-
+            Formularios.Formularios_de_Menu.IHCAFE.Frm_IHCAFE form = new Formularios_de_Menu.IHCAFE.Frm_IHCAFE();
+            this.AddOwnedForm(form);
+            form.Show();
         }
 
         private void BtnConfiguracion_Click(object sender, EventArgs e)
@@ -76,6 +78,27 @@ namespace SC__NEBO.Formularios
             Formularios.Formularios_de_Menu.Config.FrmInfoGral frm = new Formularios_de_Menu.Config.FrmInfoGral();
             this.AddOwnedForm(frm);
             frm.Show();
+        }
+
+        private void btnPrestamos_Click(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Prestamos.Frm_Prestamos form = new Formularios_de_Menu.Prestamos.Frm_Prestamos();
+            this.AddOwnedForm(form);
+            form.Show();
+        }
+
+        private void btnLquidación_Click(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Liquidacion.Frm_Liquidacion form = new Formularios_de_Menu.Liquidacion.Frm_Liquidacion();
+            this.AddOwnedForm(form);
+            form.Show();
+        }
+
+        private void btnReporte_Click(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Reportes.Frm_Reportes form = new Formularios_de_Menu.Reportes.Frm_Reportes();
+            this.AddOwnedForm(form);
+            form.Show();
         }
     }
 }

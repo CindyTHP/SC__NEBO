@@ -34,23 +34,20 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbSalir = new System.Windows.Forms.PictureBox();
             this.pbMenu = new System.Windows.Forms.PictureBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.txtObservaciones = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtPesoBruto = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txtSacos = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txtDescuento = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txtQQNetos = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.txtFletes = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtBodega = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pMenuVertical = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -67,19 +64,22 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtIdNota = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtIdCliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtCosecha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.ckbRaintforest = new System.Windows.Forms.CheckBox();
+            this.ckbFairtrade = new System.Windows.Forms.CheckBox();
+            this.ckbOrganico = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
@@ -138,14 +138,14 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.pbMenu.TabIndex = 0;
             this.pbMenu.TabStop = false;
             // 
-            // textBox9
+            // txtObservaciones
             // 
-            this.textBox9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(26, 175);
-            this.textBox9.Multiline = true;
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(504, 186);
-            this.textBox9.TabIndex = 32;
+            this.txtObservaciones.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtObservaciones.Location = new System.Drawing.Point(26, 175);
+            this.txtObservaciones.Multiline = true;
+            this.txtObservaciones.Name = "txtObservaciones";
+            this.txtObservaciones.Size = new System.Drawing.Size(504, 186);
+            this.txtObservaciones.TabIndex = 32;
             // 
             // label10
             // 
@@ -157,13 +157,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label10.TabIndex = 31;
             this.label10.Text = "OBSERVACIONES:";
             // 
-            // textBox10
+            // txtPesoBruto
             // 
-            this.textBox10.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(132, 62);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(150, 30);
-            this.textBox10.TabIndex = 34;
+            this.txtPesoBruto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesoBruto.Location = new System.Drawing.Point(140, 62);
+            this.txtPesoBruto.Name = "txtPesoBruto";
+            this.txtPesoBruto.Size = new System.Drawing.Size(150, 30);
+            this.txtPesoBruto.TabIndex = 34;
             // 
             // label11
             // 
@@ -175,13 +175,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label11.TabIndex = 33;
             this.label11.Text = "PESO BRUTO:";
             // 
-            // textBox12
+            // txtSacos
             // 
-            this.textBox12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(132, 119);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(150, 30);
-            this.textBox12.TabIndex = 38;
+            this.txtSacos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSacos.Location = new System.Drawing.Point(140, 119);
+            this.txtSacos.Name = "txtSacos";
+            this.txtSacos.Size = new System.Drawing.Size(150, 30);
+            this.txtSacos.TabIndex = 38;
             // 
             // label13
             // 
@@ -193,13 +193,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label13.TabIndex = 37;
             this.label13.Text = "SACOS:";
             // 
-            // textBox13
+            // txtDescuento
             // 
-            this.textBox13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox13.Location = new System.Drawing.Point(132, 170);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(150, 30);
-            this.textBox13.TabIndex = 40;
+            this.txtDescuento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDescuento.Location = new System.Drawing.Point(140, 171);
+            this.txtDescuento.Name = "txtDescuento";
+            this.txtDescuento.Size = new System.Drawing.Size(150, 30);
+            this.txtDescuento.TabIndex = 40;
             // 
             // label14
             // 
@@ -211,13 +211,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label14.TabIndex = 39;
             this.label14.Text = "DESCUENTOS:";
             // 
-            // textBox14
+            // txtQQNetos
             // 
-            this.textBox14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox14.Location = new System.Drawing.Point(132, 225);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(150, 30);
-            this.textBox14.TabIndex = 42;
+            this.txtQQNetos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtQQNetos.Location = new System.Drawing.Point(140, 226);
+            this.txtQQNetos.Name = "txtQQNetos";
+            this.txtQQNetos.Size = new System.Drawing.Size(150, 30);
+            this.txtQQNetos.TabIndex = 42;
             // 
             // label15
             // 
@@ -229,42 +229,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label15.TabIndex = 41;
             this.label15.Text = "QQ NETOS:";
             // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.radioButton3.Location = new System.Drawing.Point(624, 139);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(122, 23);
-            this.radioButton3.TabIndex = 36;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "ORGÁNICO";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // radioButton2
-            // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.radioButton2.Location = new System.Drawing.Point(624, 102);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(114, 23);
-            this.radioButton2.TabIndex = 35;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "FAIRTRADE";
-            this.radioButton2.UseVisualStyleBackColor = true;
-            // 
-            // radioButton1
-            // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.radioButton1.Location = new System.Drawing.Point(624, 64);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(209, 23);
-            this.radioButton1.TabIndex = 34;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "RAINTFOREST ALLIANCE";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -275,13 +239,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label9.TabIndex = 33;
             this.label9.Text = "SELLOS:";
             // 
-            // textBox7
+            // txtFletes
             // 
-            this.textBox7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(371, 60);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 30);
-            this.textBox7.TabIndex = 32;
+            this.txtFletes.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtFletes.Location = new System.Drawing.Point(371, 60);
+            this.txtFletes.Name = "txtFletes";
+            this.txtFletes.Size = new System.Drawing.Size(150, 30);
+            this.txtFletes.TabIndex = 32;
             // 
             // label8
             // 
@@ -293,13 +257,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label8.TabIndex = 31;
             this.label8.Text = "FLETES:";
             // 
-            // textBox2
+            // txtBodega
             // 
-            this.textBox2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(114, 60);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 30);
-            this.textBox2.TabIndex = 18;
+            this.txtBodega.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBodega.Location = new System.Drawing.Point(114, 60);
+            this.txtBodega.Name = "txtBodega";
+            this.txtBodega.Size = new System.Drawing.Size(150, 30);
+            this.txtBodega.TabIndex = 18;
             // 
             // label1
             // 
@@ -491,33 +455,33 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtPesoBruto);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.textBox14);
-            this.groupBox1.Controls.Add(this.textBox13);
+            this.groupBox1.Controls.Add(this.txtQQNetos);
+            this.groupBox1.Controls.Add(this.txtDescuento);
             this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.label13);
-            this.groupBox1.Controls.Add(this.textBox12);
+            this.groupBox1.Controls.Add(this.txtSacos);
             this.groupBox1.Location = new System.Drawing.Point(1151, 231);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 399);
+            this.groupBox1.Size = new System.Drawing.Size(318, 399);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "DATOS NUMÉRICOS";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.radioButton3);
-            this.groupBox2.Controls.Add(this.radioButton1);
+            this.groupBox2.Controls.Add(this.ckbOrganico);
+            this.groupBox2.Controls.Add(this.ckbFairtrade);
+            this.groupBox2.Controls.Add(this.ckbRaintforest);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.radioButton2);
-            this.groupBox2.Controls.Add(this.textBox9);
-            this.groupBox2.Controls.Add(this.textBox2);
+            this.groupBox2.Controls.Add(this.txtObservaciones);
+            this.groupBox2.Controls.Add(this.txtBodega);
             this.groupBox2.Controls.Add(this.label8);
             this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.label9);
-            this.groupBox2.Controls.Add(this.textBox7);
+            this.groupBox2.Controls.Add(this.txtFletes);
             this.groupBox2.Location = new System.Drawing.Point(232, 234);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(862, 399);
@@ -527,43 +491,44 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.button1);
-            this.groupBox3.Controls.Add(this.textBox6);
+            this.groupBox3.Controls.Add(this.btnBuscarCliente);
+            this.groupBox3.Controls.Add(this.txtDireccion);
             this.groupBox3.Controls.Add(this.label7);
-            this.groupBox3.Controls.Add(this.textBox1);
+            this.groupBox3.Controls.Add(this.txtIdNota);
             this.groupBox3.Controls.Add(this.label2);
-            this.groupBox3.Controls.Add(this.textBox5);
+            this.groupBox3.Controls.Add(this.txtCliente);
             this.groupBox3.Controls.Add(this.label6);
-            this.groupBox3.Controls.Add(this.textBox4);
+            this.groupBox3.Controls.Add(this.txtIdCliente);
             this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.dtpFecha);
             this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.textBox3);
+            this.groupBox3.Controls.Add(this.txtCosecha);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(248, 65);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1102, 160);
+            this.groupBox3.Size = new System.Drawing.Size(1221, 160);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "DATOS GENERALES:";
+            this.groupBox3.Enter += new System.EventHandler(this.groupBox3_Enter);
             // 
-            // button1
+            // btnBuscarCliente
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(804, 100);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(42, 38);
-            this.button1.TabIndex = 50;
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.btnBuscarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCliente.Image")));
+            this.btnBuscarCliente.Location = new System.Drawing.Point(804, 100);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(42, 38);
+            this.btnBuscarCliente.TabIndex = 50;
+            this.btnBuscarCliente.UseVisualStyleBackColor = false;
             // 
-            // textBox6
+            // txtDireccion
             // 
-            this.textBox6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(416, 46);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(380, 30);
-            this.textBox6.TabIndex = 49;
+            this.txtDireccion.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDireccion.Location = new System.Drawing.Point(416, 46);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(380, 30);
+            this.txtDireccion.TabIndex = 49;
             // 
             // label7
             // 
@@ -575,13 +540,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label7.TabIndex = 48;
             this.label7.Text = "DIRECCIÓN:";
             // 
-            // textBox1
+            // txtIdNota
             // 
-            this.textBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(984, 102);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 30);
-            this.textBox1.TabIndex = 47;
+            this.txtIdNota.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdNota.Location = new System.Drawing.Point(984, 102);
+            this.txtIdNota.Name = "txtIdNota";
+            this.txtIdNota.Size = new System.Drawing.Size(150, 30);
+            this.txtIdNota.TabIndex = 47;
             // 
             // label2
             // 
@@ -593,13 +558,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label2.TabIndex = 46;
             this.label2.Text = "ID NOTA:";
             // 
-            // textBox5
+            // txtCliente
             // 
-            this.textBox5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(380, 102);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(416, 30);
-            this.textBox5.TabIndex = 45;
+            this.txtCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCliente.Location = new System.Drawing.Point(380, 102);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(416, 30);
+            this.txtCliente.TabIndex = 45;
             // 
             // label6
             // 
@@ -611,13 +576,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label6.TabIndex = 44;
             this.label6.Text = "CLIENTE:";
             // 
-            // textBox4
+            // txtIdCliente
             // 
-            this.textBox4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(110, 102);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 30);
-            this.textBox4.TabIndex = 43;
+            this.txtIdCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtIdCliente.Location = new System.Drawing.Point(110, 102);
+            this.txtIdCliente.Name = "txtIdCliente";
+            this.txtIdCliente.Size = new System.Drawing.Size(150, 30);
+            this.txtIdCliente.TabIndex = 43;
             // 
             // label5
             // 
@@ -629,14 +594,14 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label5.TabIndex = 42;
             this.label5.Text = "ID CLIENTE:";
             // 
-            // dateTimePicker1
+            // dtpFecha
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(984, 50);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(150, 30);
-            this.dateTimePicker1.TabIndex = 41;
+            this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFecha.Location = new System.Drawing.Point(984, 50);
+            this.dtpFecha.Name = "dtpFecha";
+            this.dtpFecha.Size = new System.Drawing.Size(150, 30);
+            this.dtpFecha.TabIndex = 41;
             // 
             // label4
             // 
@@ -648,13 +613,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label4.TabIndex = 40;
             this.label4.Text = "FECHA:";
             // 
-            // textBox3
+            // txtCosecha
             // 
-            this.textBox3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(110, 46);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 30);
-            this.textBox3.TabIndex = 39;
+            this.txtCosecha.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCosecha.Location = new System.Drawing.Point(110, 46);
+            this.txtCosecha.Name = "txtCosecha";
+            this.txtCosecha.Size = new System.Drawing.Size(150, 30);
+            this.txtCosecha.TabIndex = 39;
             // 
             // label3
             // 
@@ -665,6 +630,39 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label3.Size = new System.Drawing.Size(101, 22);
             this.label3.TabIndex = 38;
             this.label3.Text = "COSECHA:";
+            // 
+            // ckbRaintforest
+            // 
+            this.ckbRaintforest.AutoSize = true;
+            this.ckbRaintforest.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.ckbRaintforest.Location = new System.Drawing.Point(633, 66);
+            this.ckbRaintforest.Name = "ckbRaintforest";
+            this.ckbRaintforest.Size = new System.Drawing.Size(210, 23);
+            this.ckbRaintforest.TabIndex = 37;
+            this.ckbRaintforest.Text = "RAINTFOREST ALLIANCE";
+            this.ckbRaintforest.UseVisualStyleBackColor = true;
+            // 
+            // ckbFairtrade
+            // 
+            this.ckbFairtrade.AutoSize = true;
+            this.ckbFairtrade.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.ckbFairtrade.Location = new System.Drawing.Point(633, 108);
+            this.ckbFairtrade.Name = "ckbFairtrade";
+            this.ckbFairtrade.Size = new System.Drawing.Size(115, 23);
+            this.ckbFairtrade.TabIndex = 38;
+            this.ckbFairtrade.Text = "FAIRTRADE";
+            this.ckbFairtrade.UseVisualStyleBackColor = true;
+            // 
+            // ckbOrganico
+            // 
+            this.ckbOrganico.AutoSize = true;
+            this.ckbOrganico.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.ckbOrganico.Location = new System.Drawing.Point(633, 150);
+            this.ckbOrganico.Name = "ckbOrganico";
+            this.ckbOrganico.Size = new System.Drawing.Size(109, 23);
+            this.ckbOrganico.TabIndex = 39;
+            this.ckbOrganico.Text = "Orgánico";
+            this.ckbOrganico.UseVisualStyleBackColor = true;
             // 
             // Frm_Notas_Peso
             // 
@@ -707,24 +705,21 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
         private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.PictureBox pbSalir;
         private System.Windows.Forms.PictureBox pbMenu;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.TextBox txtObservaciones;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txtPesoBruto;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txtSacos;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txtDescuento;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txtQQNetos;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtFletes;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtBodega;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Panel pMenuVertical;
         private System.Windows.Forms.Label COAEDCAL;
         private System.Windows.Forms.Panel panel5;
@@ -740,18 +735,21 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button btnBuscarCliente;
+        private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtIdNota;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtIdCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpFecha;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtCosecha;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox ckbOrganico;
+        private System.Windows.Forms.CheckBox ckbFairtrade;
+        private System.Windows.Forms.CheckBox ckbRaintforest;
     }
 }

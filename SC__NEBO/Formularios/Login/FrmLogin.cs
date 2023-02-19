@@ -51,5 +51,18 @@ namespace SC__NEBO.Formularios.Login
         {
             Close();
         }
+
+        private void CbMostrar_CheckedChanged(object sender, EventArgs e)
+        {
+            if (CbMostrar.Checked == false)
+            {
+                TxtClave.UseSystemPasswordChar = true;
+
+            }
+            else
+            {
+                TxtClave.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

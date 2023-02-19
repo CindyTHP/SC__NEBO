@@ -50,16 +50,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.label5 = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtDNI = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtRTN = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.txtComunidad = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtClaveIHCAFE = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtMunicipio = new System.Windows.Forms.TextBox();
@@ -70,6 +62,18 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.txtTelefono = new System.Windows.Forms.MaskedTextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.txtNo_Cuenta = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtDepto = new System.Windows.Forms.TextBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.txtDireccion_Finca = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.cmbEstadoCivil = new System.Windows.Forms.ComboBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.txtRTN = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
@@ -151,7 +155,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.pMenuVertical.Dock = System.Windows.Forms.DockStyle.Left;
             this.pMenuVertical.Location = new System.Drawing.Point(0, 0);
             this.pMenuVertical.Name = "pMenuVertical";
-            this.pMenuVertical.Size = new System.Drawing.Size(210, 506);
+            this.pMenuVertical.Size = new System.Drawing.Size(210, 616);
             this.pMenuVertical.TabIndex = 12;
             // 
             // btnRegresar
@@ -181,7 +185,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.btnListaClientes.ForeColor = System.Drawing.Color.White;
             this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
             this.btnListaClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListaClientes.Location = new System.Drawing.Point(0, 454);
+            this.btnListaClientes.Location = new System.Drawing.Point(0, 564);
             this.btnListaClientes.Name = "btnListaClientes";
             this.btnListaClientes.Size = new System.Drawing.Size(210, 52);
             this.btnListaClientes.TabIndex = 6;
@@ -330,107 +334,32 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(272, 148);
+            this.label1.Location = new System.Drawing.Point(256, 148);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(88, 22);
             this.label1.TabIndex = 33;
             this.label1.Text = "NOMBRE:";
             // 
-            // txtDNI
-            // 
-            this.txtDNI.Location = new System.Drawing.Point(358, 267);
-            this.txtDNI.Name = "txtDNI";
-            this.txtDNI.Size = new System.Drawing.Size(188, 32);
-            this.txtDNI.TabIndex = 36;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(312, 273);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 22);
-            this.label2.TabIndex = 35;
-            this.label2.Text = "DNI:";
-            // 
-            // txtRTN
-            // 
-            this.txtRTN.Location = new System.Drawing.Point(618, 267);
-            this.txtRTN.Name = "txtRTN";
-            this.txtRTN.Size = new System.Drawing.Size(188, 32);
-            this.txtRTN.TabIndex = 38;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(568, 273);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 22);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "RTN:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(820, 273);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 22);
-            this.label4.TabIndex = 39;
-            this.label4.Text = "ESTADO CIVIL:";
-            // 
-            // cmbEstadoCivil
-            // 
-            this.cmbEstadoCivil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.cmbEstadoCivil.FormattingEnabled = true;
-            this.cmbEstadoCivil.Items.AddRange(new object[] {
-            "SOLTERO(A)",
-            "CASADO(A)",
-            "DIVORCIADO(A)",
-            "VIUDO(A)"});
-            this.cmbEstadoCivil.Location = new System.Drawing.Point(951, 268);
-            this.cmbEstadoCivil.Name = "cmbEstadoCivil";
-            this.cmbEstadoCivil.Size = new System.Drawing.Size(187, 30);
-            this.cmbEstadoCivil.TabIndex = 41;
-            // 
             // txtDireccion
             // 
-            this.txtDireccion.Location = new System.Drawing.Point(358, 206);
+            this.txtDireccion.Location = new System.Drawing.Point(434, 264);
             this.txtDireccion.Name = "txtDireccion";
-            this.txtDireccion.Size = new System.Drawing.Size(780, 32);
+            this.txtDireccion.Size = new System.Drawing.Size(704, 32);
             this.txtDireccion.TabIndex = 43;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(248, 212);
+            this.label6.Location = new System.Drawing.Point(256, 268);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 22);
+            this.label6.Size = new System.Drawing.Size(167, 22);
             this.label6.TabIndex = 42;
-            this.label6.Text = "DIRECCIÓN:";
-            // 
-            // txtComunidad
-            // 
-            this.txtComunidad.Location = new System.Drawing.Point(358, 326);
-            this.txtComunidad.Name = "txtComunidad";
-            this.txtComunidad.Size = new System.Drawing.Size(780, 32);
-            this.txtComunidad.TabIndex = 45;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(230, 332);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(129, 22);
-            this.label7.TabIndex = 44;
-            this.label7.Text = "COMUNIDAD:";
+            this.label6.Text = "DIRECCIÓN CASA:";
             // 
             // txtClaveIHCAFE
             // 
-            this.txtClaveIHCAFE.Location = new System.Drawing.Point(358, 384);
+            this.txtClaveIHCAFE.Location = new System.Drawing.Point(415, 387);
             this.txtClaveIHCAFE.Name = "txtClaveIHCAFE";
             this.txtClaveIHCAFE.Size = new System.Drawing.Size(188, 32);
             this.txtClaveIHCAFE.TabIndex = 47;
@@ -439,7 +368,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(222, 390);
+            this.label8.Location = new System.Drawing.Point(256, 391);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 22);
             this.label8.TabIndex = 46;
@@ -447,16 +376,16 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             // txtMunicipio
             // 
-            this.txtMunicipio.Location = new System.Drawing.Point(950, 384);
+            this.txtMunicipio.Location = new System.Drawing.Point(618, 452);
             this.txtMunicipio.Name = "txtMunicipio";
-            this.txtMunicipio.Size = new System.Drawing.Size(188, 32);
+            this.txtMunicipio.Size = new System.Drawing.Size(196, 32);
             this.txtMunicipio.TabIndex = 49;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(842, 388);
+            this.label9.Location = new System.Drawing.Point(504, 457);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(110, 22);
             this.label9.TabIndex = 48;
@@ -483,7 +412,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             this.lblMsg.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.lblMsg.ForeColor = System.Drawing.Color.Red;
-            this.lblMsg.Location = new System.Drawing.Point(236, 438);
+            this.lblMsg.Location = new System.Drawing.Point(236, 527);
             this.lblMsg.Name = "lblMsg";
             this.lblMsg.Size = new System.Drawing.Size(904, 60);
             this.lblMsg.TabIndex = 52;
@@ -492,17 +421,17 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             // txtTelefono
             // 
-            this.txtTelefono.Location = new System.Drawing.Point(618, 384);
+            this.txtTelefono.Location = new System.Drawing.Point(655, 391);
             this.txtTelefono.Mask = "9999-9999";
             this.txtTelefono.Name = "txtTelefono";
-            this.txtTelefono.Size = new System.Drawing.Size(196, 32);
+            this.txtTelefono.Size = new System.Drawing.Size(159, 32);
             this.txtTelefono.TabIndex = 53;
             // 
             // label12
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label12.Location = new System.Drawing.Point(573, 388);
+            this.label12.Location = new System.Drawing.Point(609, 395);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(40, 22);
             this.label12.TabIndex = 54;
@@ -514,11 +443,132 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.contextMenuStrip1.Name = "contextMenuStrip1";
             this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
+            // txtNo_Cuenta
+            // 
+            this.txtNo_Cuenta.Location = new System.Drawing.Point(952, 391);
+            this.txtNo_Cuenta.Name = "txtNo_Cuenta";
+            this.txtNo_Cuenta.Size = new System.Drawing.Size(188, 32);
+            this.txtNo_Cuenta.TabIndex = 56;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(830, 395);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(117, 22);
+            this.label13.TabIndex = 55;
+            this.label13.Text = "NO CUENTA:";
+            // 
+            // txtDepto
+            // 
+            this.txtDepto.Location = new System.Drawing.Point(952, 452);
+            this.txtDepto.Name = "txtDepto";
+            this.txtDepto.Size = new System.Drawing.Size(188, 32);
+            this.txtDepto.TabIndex = 58;
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label14.Location = new System.Drawing.Point(879, 457);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(70, 22);
+            this.label14.TabIndex = 57;
+            this.label14.Text = "DEPTO:";
+            // 
+            // txtDireccion_Finca
+            // 
+            this.txtDireccion_Finca.Location = new System.Drawing.Point(434, 326);
+            this.txtDireccion_Finca.Name = "txtDireccion_Finca";
+            this.txtDireccion_Finca.Size = new System.Drawing.Size(704, 32);
+            this.txtDireccion_Finca.TabIndex = 60;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label15.Location = new System.Drawing.Point(256, 330);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(172, 22);
+            this.label15.TabIndex = 59;
+            this.label15.Text = "DIRECCIÓN FINCA:";
+            // 
+            // cmbEstadoCivil
+            // 
+            this.cmbEstadoCivil.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.cmbEstadoCivil.FormattingEnabled = true;
+            this.cmbEstadoCivil.Items.AddRange(new object[] {
+            "SOLTERO(A)",
+            "CASADO(A)",
+            "DIVORCIADO(A)",
+            "VIUDO(A)"});
+            this.cmbEstadoCivil.Location = new System.Drawing.Point(950, 204);
+            this.cmbEstadoCivil.Name = "cmbEstadoCivil";
+            this.cmbEstadoCivil.Size = new System.Drawing.Size(187, 30);
+            this.cmbEstadoCivil.TabIndex = 66;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label4.Location = new System.Drawing.Point(819, 209);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(131, 22);
+            this.label4.TabIndex = 65;
+            this.label4.Text = "ESTADO CIVIL:";
+            // 
+            // txtRTN
+            // 
+            this.txtRTN.Location = new System.Drawing.Point(617, 203);
+            this.txtRTN.Name = "txtRTN";
+            this.txtRTN.Size = new System.Drawing.Size(188, 32);
+            this.txtRTN.TabIndex = 64;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label3.Location = new System.Drawing.Point(567, 209);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 22);
+            this.label3.TabIndex = 63;
+            this.label3.Text = "RTN:";
+            // 
+            // txtDNI
+            // 
+            this.txtDNI.Location = new System.Drawing.Point(357, 203);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.Size = new System.Drawing.Size(188, 32);
+            this.txtDNI.TabIndex = 62;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.label2.Location = new System.Drawing.Point(311, 209);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 22);
+            this.label2.TabIndex = 61;
+            this.label2.Text = "DNI:";
+            // 
             // Frm_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1198, 506);
+            this.ClientSize = new System.Drawing.Size(1198, 616);
+            this.Controls.Add(this.cmbEstadoCivil);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.txtRTN);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtDNI);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtDireccion_Finca);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.txtDepto);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.txtNo_Cuenta);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblMsg);
@@ -528,16 +578,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtClaveIHCAFE);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.txtComunidad);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.cmbEstadoCivil);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtRTN);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDNI);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtIdCliente);
@@ -581,16 +623,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtDNI;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtRTN;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox cmbEstadoCivil;
         private System.Windows.Forms.TextBox txtDireccion;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtComunidad;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtClaveIHCAFE;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtMunicipio;
@@ -603,5 +637,17 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         private System.Windows.Forms.MaskedTextBox txtTelefono;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.TextBox txtNo_Cuenta;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtDepto;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.TextBox txtDireccion_Finca;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.ComboBox cmbEstadoCivil;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txtRTN;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.Label label2;
     }
 }

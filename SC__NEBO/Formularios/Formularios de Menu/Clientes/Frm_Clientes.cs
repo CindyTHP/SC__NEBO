@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -18,7 +19,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
         int errors;
 
-        string idcliente, nombre, apellido, direccion, dni, rtn, estadocivil, comunidad, claveihcafe, municipio, telefono;
+        string idcliente, nombre, apellido, direccion, dni, rtn, estadocivil, direccion_finca, claveihcafe, telefono, no_cuenta, municipio, depto;
 
         private void txtIdCliente_TextChanged(object sender, EventArgs e)
         {
@@ -43,8 +44,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
                 if (a.Pregunta(msg) == true)
                 {
                     string id_cliente = txtIdCliente.Text.Trim();
-                    string stmt = "DNI='"+dni+"',NOMBRES='" + nombre + "',APELLIDOS='" + apellido + "',RTN='"+rtn+"',DIRECCION='" + direccion + "',TELEFONO='" + telefono + "'," +
-                        "ESTADO_CIVIL='" + estadocivil + "',CLAVE_IHCAFE='" + claveihcafe + "',COMUNIDAD='" + comunidad + "',MUNICIPIO='" + municipio + "',";
+                    string stmt = "NOMBRES='" + nombre + "',APELLIDOS='" + apellido + "',DNI='"+dni+"',RTN='"+rtn+"',DIRECCION='" + direccion + "',DIRECCION_FINCA='" + direccion_finca + "',TELEFONO='" + telefono + "'," +
+                        "ESTADO_CIVIL='" + estadocivil + "',CLAVE_IHCAFE='" + claveihcafe + "',NO_CUENTA='" + no_cuenta + "',MUNICIPIO='" + municipio + "',DEPARTAMENTO='" + depto + "'";
                     string condicion = "ID_CLIENTE='" + id_cliente + "'";
 
                     if (db.Update("CLIENTES", stmt, condicion) > 0)
@@ -67,9 +68,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             {
                 if (a.Pregunta(msg) == true)
                 {
-                    string campos = "ID_CLIENTE, NOMBRES, APELLIDOS,DNI, RTN, DIRECCION, TELEFONO, ESTADO_CIVIL, CLAVE_IHCAFE, COMUNIDAD, MUNICIPIO";
+                    string campos = "ID_CLIENTE, NOMBRES, APELLIDOS,DNI, RTN, DIRECCION, DIRECCION_FINCA, TELEFONO, ESTADO_CIVIL, CLAVE_IHCAFE, NO_CUENTA, MUNICIPIO, DEPARTAMENTO";
 
-                    string valores = "'" + idcliente + "', '" + nombre + "','" + apellido + "','" + dni + "', '" + rtn +"','" + direccion + "','" + telefono + "', '" + estadocivil + "', '" + claveihcafe + "', '"+comunidad+"','"+municipio+"'";
+                    string valores = "'" + idcliente + "', '" + nombre + "','" + apellido + "','" + dni + "', '" + rtn +"','" + direccion + "','" + direccion_finca + "','" + telefono + "', '" + estadocivil + "', '" + claveihcafe + "', '"+no_cuenta+"','"+municipio+ "''" + depto + "',";
 
 
                     if (db.Save("CLIENTES", campos, valores) > 0)
@@ -90,14 +91,47 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             txtIdCliente.Clear();
             txtNombre.Clear();
             txtApellido.Clear();
-            txtDireccion.Clear();
             txtDNI.Clear();
             txtRTN.Clear();
             cmbEstadoCivil.SelectedIndex = -1;
-            txtComunidad.Clear();
+            txtDireccion.Clear();
+            txtDireccion_Finca.Clear();
             txtClaveIHCAFE.Clear();
             txtTelefono.Clear();
+            txtNo_Cuenta.Clear();
             txtMunicipio.Clear();
+            txtDepto.Clear();
+        }
+
+        private void Boot()
+        {
+            btnNuevo.Enabled = Clases.Auth.save == "S" ? true : false;
+            btnGuardar.Enabled = false;
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = false;
+            pbSalir.Enabled = true;
+
+            txtIdCliente.Enabled = false;
+            txtNombre.Enabled = false;
+            txtApellido.Enabled = false;
+            txtDNI.Enabled = false;
+            txtRTN.Enabled = false;
+            cmbEstadoCivil.Enabled = false;
+            txtDireccion.Enabled = false;
+            txtDireccion_Finca.Enabled = false;
+            txtClaveIHCAFE.Enabled = false;
+            txtTelefono.Enabled = false;
+            txtNo_Cuenta.Enabled = false;
+            txtMunicipio.Enabled = false;
+            txtDepto.Enabled = false;
+
+            lblMsg.Visible = false;
+
+            //DgvData.Rows.Clear();
+            //txtBuscar.Clear();
+            //txtBuscar.Focus();
+
         }
 
         public void ValidateData()
@@ -106,18 +140,20 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             idcliente = a.Clean(txtIdCliente.Text.Trim());
             nombre = a.Clean(txtNombre.Text.Trim());
             apellido = a.Clean(txtApellido.Text.Trim());
-            direccion = a.Clean(txtDireccion.Text.Trim());
             dni = a.Clean(txtDNI.Text.Trim());
             rtn = a.Clean(txtRTN.Text.Trim());
             estadocivil= a.Clean(cmbEstadoCivil.Text.Trim());
-            comunidad = a.Clean(txtComunidad.Text.Trim());
+            direccion = a.Clean(txtDireccion.Text.Trim());
+            direccion_finca = a.Clean(txtDireccion_Finca.Text.Trim());
             claveihcafe = a.Clean(txtClaveIHCAFE.Text.Trim());
             telefono = txtTelefono.Text.Trim();
+            no_cuenta = a.Clean(txtNo_Cuenta.Text.Trim());
             municipio = a.Clean(txtMunicipio.Text.Trim());
+            depto = a.Clean(txtDepto.Text.Trim());
 
             if (idcliente.Length == 0)
             {
-                a.Advertencia("INGRESAR EL ID DEL CLIENTE!");
+                a.Advertencia("¡INGRESAR EL ID DEL CLIENTE!");
                 txtIdCliente.Text = "";
                 txtIdCliente.Focus();
                 errors++;
@@ -126,7 +162,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (nombre.Length == 0)
             {
-                a.Advertencia("INGRESAR EL NOMBRE DEL CLIENTE!");
+                a.Advertencia("¡INGRESAR EL NOMBRE DEL CLIENTE!");
                 txtNombre.Text = "";
                 txtNombre.Focus();
                 errors++;
@@ -134,23 +170,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (apellido.Length == 0)
             {
-                a.Advertencia("INGRESAR EL APELLIDO DEL CLIENTE!");
+                a.Advertencia("¡INGRESAR EL APELLIDO DEL CLIENTE!");
                 txtApellido.Text = "";
                 txtApellido.Focus();
                 errors++;
             }
-
-            if (direccion.Length == 0)
-            {
-                a.Advertencia("INGRESAR LA DIRECCION!");
-                txtDireccion.Text = "";
-                txtDireccion.Focus();
-                errors++;
-            }
-
+                        
             if (dni.Length == 0)
             {
-                a.Advertencia("INGRESAR EL DNI DEL CLIENTE!");
+                a.Advertencia("¡INGRESAR EL DNI DEL CLIENTE!");
                 txtDNI.Text = "";
                 txtDNI.Focus();
                 errors++;
@@ -158,7 +186,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (rtn.Length == 0)
             {
-                a.Advertencia("INGRESAR EL RTN DEL CLIENTE!");
+                a.Advertencia("¡INGRESAR EL RTN DEL CLIENTE!");
                 txtRTN.Text = "";
                 txtRTN.Focus();
                 errors++;
@@ -166,22 +194,30 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (estadocivil.Length == 0)
             {
-                a.Advertencia("SELECCIONE EL ESTADO CIVIL DEL CLIENTE!");
+                a.Advertencia("¡SELECCIONE EL ESTADO CIVIL DEL CLIENTE!");
                 cmbEstadoCivil.Text = "";
                 cmbEstadoCivil.Focus();
                 errors++;
             }
-            if (comunidad.Length == 0)
+            if (direccion.Length == 0)
             {
-                a.Advertencia("INGRESE LA COMUNIDAD EN LA QUE RESIDE DEL CLIENTE!");
-                txtComunidad.Text = "";
-                txtComunidad.Focus();
+                a.Advertencia("¡INGRESAR LA DIRECCION!");
+                txtDireccion.Text = "";
+                txtDireccion.Focus();
+                errors++;
+            }
+
+            if (direccion_finca.Length == 0)
+            {
+                a.Advertencia("¡INGRESAR LA DIRECCION!");
+                txtDireccion.Text = "";
+                txtDireccion.Focus();
                 errors++;
             }
 
             if (claveihcafe.Length == 0)
             {
-                a.Advertencia("INGRESAR EL RTN DEL CLIENTE!");
+                a.Advertencia("¡INGRESAR LA CLAVE DE IHCAFE!");
                 txtClaveIHCAFE.Text = "";
                 txtClaveIHCAFE.Focus();
                 errors++;
@@ -189,18 +225,34 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
 
             if (txtTelefono.MaskFull == false)
             {
-                a.Advertencia("INGRESAR EL NUMERO DE TELEFONO!");
+                a.Advertencia("¡INGRESAR EL NUMERO DE TELEFONO!");
                 txtTelefono.Text = telefono;
                 txtTelefono.Focus();
                 errors++;
                 return;
             }
 
+            if (no_cuenta.Length == 0)
+            {
+                a.Advertencia("¡INGRESAR EL NUMERO DE CUENTA!");
+                txtNo_Cuenta.Text = "";
+                txtNo_Cuenta.Focus();
+                errors++;
+            }
+
             if (municipio.Length == 0)
             {
-                a.Advertencia("INGRESAR EL CORREO ELECTRONICO!");
-                txtComunidad.Text = "";
-                txtComunidad.Focus();
+                a.Advertencia("¡INGRESAR EL MUNICIPIO!");
+                txtMunicipio.Text = "";
+                txtMunicipio.Focus();
+                errors++;
+            }
+
+            if (depto.Length == 0)
+            {
+                a.Advertencia("¡INGRESAR EL DEPARTAMENTO!");
+                txtDepto.Text = "";
+                txtDepto.Focus();
                 errors++;
             }
 
@@ -221,13 +273,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             txtNombre.Enabled = true;
             txtApellido.Enabled = true;
             txtDireccion.Enabled = true;
+            txtDireccion_Finca.Enabled = true;
             txtDNI.Enabled = true;
             txtRTN.Enabled = true;
             cmbEstadoCivil.Enabled = true;
-            txtComunidad.Enabled = true;
             txtClaveIHCAFE.Enabled = true;
             txtTelefono.Enabled = true;
+            txtNo_Cuenta.Enabled = true;
             txtMunicipio.Enabled = true;
+            txtDepto.Enabled = true;
 
             txtNombre.Focus();
         }
@@ -266,88 +320,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         //    data.Dispose();
         //}
 
-        private void Boot()
-        {
-            btnNuevo.Enabled = Clases.Auth.save == "S" ? true : false;
-            btnGuardar.Enabled = false;
-            btnActualizar.Enabled = false;
-            btnEliminar.Enabled = false;
-            btnCancelar.Enabled = false;
-            pbSalir.Enabled = true;
-
-            txtIdCliente.Enabled = false;
-            txtNombre.Enabled = false;
-            txtApellido.Enabled = false;
-            txtDireccion.Enabled = false;
-            txtDNI.Enabled = false;
-            txtRTN.Enabled = false;
-            cmbEstadoCivil.Enabled = false;
-            txtComunidad.Enabled = false;
-            txtClaveIHCAFE.Enabled = false;
-            txtTelefono.Enabled = false;
-            txtMunicipio.Enabled = false;
-
-            lblMsg.Visible = false;
-
-            //DgvData.Rows.Clear();
-            //txtBuscar.Clear();
-            //txtBuscar.Focus();
-
-        }
-
-        private void GetInfoDocente(string id)
-        {
-            string condicion = "IDCLIENTE ='" + id + "' AND ESTADO = 'ACTIVO'";
-            DataTable cliente = db.Find("CLIENTES", "*", condicion);
-
-            if (cliente.Rows.Count > 0)
-            {
-                btnNuevo.Enabled = false;
-                btnGuardar.Enabled = false;
-                btnActualizar.Enabled = Clases.Auth.update == "S" ? true : false;
-                btnEliminar.Enabled = Clases.Auth.delete == "S" ? true : false;
-                btnCancelar.Enabled = true;
-                pbSalir.Enabled = false;
-
-                DataRow info = cliente.Rows[0];
-                txtIdCliente.Text = info["IDCLIENTE"].ToString();
-                txtNombre.Text = info["NOMBRES"].ToString();
-                txtApellido.Text = info["APELLIDOS"].ToString();
-                txtDireccion.Text = info["DIRECCION"].ToString();
-                txtDNI.Text = info["DNI"].ToString();
-                txtRTN.Text = info["RTN"].ToString();
-                cmbEstadoCivil.Text = info["ESTADO_CIVIL"].ToString();
-                txtComunidad.Text = info["COMUNIDAD"].ToString();
-                txtClaveIHCAFE.Text = info["CLAVE_IHCAFE"].ToString();
-                txtTelefono.Text = info["TELEFONO"].ToString();
-                txtMunicipio.Text = info["MUNICIPIO"].ToString();
-                //txtDetalles.Text = info["DETALLES"].ToString();
-
-                txtIdCliente.Enabled = false;
-                txtNombre.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtApellido.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtDireccion.Enabled = Clases.Auth.update == "S" ? true : false;
-
-                txtDNI.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtRTN.Enabled = Clases.Auth.update == "S" ? true : false;
-                cmbEstadoCivil.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtComunidad.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtClaveIHCAFE.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtTelefono.Enabled = Clases.Auth.update == "S" ? true : false;
-                txtMunicipio.Enabled = Clases.Auth.update == "S" ? true : false;
-
-                //txtDetalles.Enabled = Clases.Auth.update == "S" ? true : false;
-
-                lblMsg.Visible = false;
-            }
-            else
-            {
-                a.Advertencia("ERROR AL RECUPERAR LOS DATOS DEL REGISTRO SELECCIONADO!");
-            }
-
-            cliente.Dispose();
-        }
-
+       
         private void txtIdCliente_Validating(object sender, CancelEventArgs e)
         {
             string id = a.Clean(txtIdCliente.Text.Trim());
@@ -427,6 +400,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         {
             Boot();
         }
-        
+                
     }
 }

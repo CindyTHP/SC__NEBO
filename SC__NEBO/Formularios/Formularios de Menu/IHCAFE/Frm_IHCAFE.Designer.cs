@@ -179,7 +179,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.IHCAFE
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "    CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
-            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label12
             // 
@@ -240,7 +239,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.IHCAFE
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "   GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
-            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -257,7 +255,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.IHCAFE
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel2
             // 
@@ -742,7 +739,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.IHCAFE
             this.Name = "Frm_IHCAFE";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_IHCAFE";
-            this.Load += new System.EventHandler(this.Frm_IHCAFE_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);

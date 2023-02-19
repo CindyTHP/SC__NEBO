@@ -111,6 +111,24 @@
     <Compile Include="Formularios\Formularios de Menu\Notas de Peso\Frm_Notas_Peso.Designer.cs">
       <DependentUpon>Frm_Notas_Peso.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Pagos_Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Pagos_Prestamos.Designer.cs">
+      <DependentUpon>Frm_Pagos_Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos.Designer.cs">
+      <DependentUpon>Frm_Prestamos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Reporte_Prestamo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Reporte_Prestamo.Designer.cs">
+      <DependentUpon>Frm_Reporte_Prestamo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Formularios de Menu\Reportes\Frm_Reportes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -163,6 +181,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios de Menu\Notas de Peso\Frm_Notas_Peso.resx">
       <DependentUpon>Frm_Notas_Peso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Prestamos\Frm_Pagos_Prestamos.resx">
+      <DependentUpon>Frm_Pagos_Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos.resx">
+      <DependentUpon>Frm_Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Prestamos\Frm_Reporte_Prestamo.resx">
+      <DependentUpon>Frm_Reporte_Prestamo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios de Menu\Reportes\Frm_Reportes.resx">
       <DependentUpon>Frm_Reportes.cs</DependentUpon>

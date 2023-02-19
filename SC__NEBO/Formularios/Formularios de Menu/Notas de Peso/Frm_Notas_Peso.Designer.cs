@@ -44,9 +44,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label14 = new System.Windows.Forms.Label();
             this.txtQQNetos = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.rbOrganico = new System.Windows.Forms.RadioButton();
-            this.rbFairtrade = new System.Windows.Forms.RadioButton();
-            this.rbRaintForest = new System.Windows.Forms.RadioButton();
             this.label9 = new System.Windows.Forms.Label();
             this.txtFletes = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -80,6 +77,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label4 = new System.Windows.Forms.Label();
             this.txtCosecha = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.ckbRaintforest = new System.Windows.Forms.CheckBox();
+            this.ckbFairtrade = new System.Windows.Forms.CheckBox();
+            this.ckbOrganico = new System.Windows.Forms.CheckBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
@@ -160,7 +160,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             // txtPesoBruto
             // 
             this.txtPesoBruto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesoBruto.Location = new System.Drawing.Point(132, 62);
+            this.txtPesoBruto.Location = new System.Drawing.Point(140, 62);
             this.txtPesoBruto.Name = "txtPesoBruto";
             this.txtPesoBruto.Size = new System.Drawing.Size(150, 30);
             this.txtPesoBruto.TabIndex = 34;
@@ -178,7 +178,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             // txtSacos
             // 
             this.txtSacos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSacos.Location = new System.Drawing.Point(132, 119);
+            this.txtSacos.Location = new System.Drawing.Point(140, 119);
             this.txtSacos.Name = "txtSacos";
             this.txtSacos.Size = new System.Drawing.Size(150, 30);
             this.txtSacos.TabIndex = 38;
@@ -196,7 +196,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             // txtDescuento
             // 
             this.txtDescuento.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDescuento.Location = new System.Drawing.Point(132, 170);
+            this.txtDescuento.Location = new System.Drawing.Point(140, 171);
             this.txtDescuento.Name = "txtDescuento";
             this.txtDescuento.Size = new System.Drawing.Size(150, 30);
             this.txtDescuento.TabIndex = 40;
@@ -214,7 +214,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             // txtQQNetos
             // 
             this.txtQQNetos.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtQQNetos.Location = new System.Drawing.Point(132, 225);
+            this.txtQQNetos.Location = new System.Drawing.Point(140, 226);
             this.txtQQNetos.Name = "txtQQNetos";
             this.txtQQNetos.Size = new System.Drawing.Size(150, 30);
             this.txtQQNetos.TabIndex = 42;
@@ -228,42 +228,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label15.Size = new System.Drawing.Size(104, 22);
             this.label15.TabIndex = 41;
             this.label15.Text = "QQ NETOS:";
-            // 
-            // rbOrganico
-            // 
-            this.rbOrganico.AutoSize = true;
-            this.rbOrganico.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.rbOrganico.Location = new System.Drawing.Point(624, 139);
-            this.rbOrganico.Name = "rbOrganico";
-            this.rbOrganico.Size = new System.Drawing.Size(122, 23);
-            this.rbOrganico.TabIndex = 36;
-            this.rbOrganico.TabStop = true;
-            this.rbOrganico.Text = "ORGÁNICO";
-            this.rbOrganico.UseVisualStyleBackColor = true;
-            // 
-            // rbFairtrade
-            // 
-            this.rbFairtrade.AutoSize = true;
-            this.rbFairtrade.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.rbFairtrade.Location = new System.Drawing.Point(624, 102);
-            this.rbFairtrade.Name = "rbFairtrade";
-            this.rbFairtrade.Size = new System.Drawing.Size(114, 23);
-            this.rbFairtrade.TabIndex = 35;
-            this.rbFairtrade.TabStop = true;
-            this.rbFairtrade.Text = "FAIRTRADE";
-            this.rbFairtrade.UseVisualStyleBackColor = true;
-            // 
-            // rbRaintForest
-            // 
-            this.rbRaintForest.AutoSize = true;
-            this.rbRaintForest.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
-            this.rbRaintForest.Location = new System.Drawing.Point(624, 64);
-            this.rbRaintForest.Name = "rbRaintForest";
-            this.rbRaintForest.Size = new System.Drawing.Size(209, 23);
-            this.rbRaintForest.TabIndex = 34;
-            this.rbRaintForest.TabStop = true;
-            this.rbRaintForest.Text = "RAINTFOREST ALLIANCE";
-            this.rbRaintForest.UseVisualStyleBackColor = true;
             // 
             // label9
             // 
@@ -501,17 +465,17 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.groupBox1.Controls.Add(this.txtSacos);
             this.groupBox1.Location = new System.Drawing.Point(1151, 231);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(239, 399);
+            this.groupBox1.Size = new System.Drawing.Size(318, 399);
             this.groupBox1.TabIndex = 47;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "DATOS NUMÉRICOS";
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.rbOrganico);
-            this.groupBox2.Controls.Add(this.rbRaintForest);
+            this.groupBox2.Controls.Add(this.ckbOrganico);
+            this.groupBox2.Controls.Add(this.ckbFairtrade);
+            this.groupBox2.Controls.Add(this.ckbRaintforest);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.rbFairtrade);
             this.groupBox2.Controls.Add(this.txtObservaciones);
             this.groupBox2.Controls.Add(this.txtBodega);
             this.groupBox2.Controls.Add(this.label8);
@@ -542,7 +506,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Location = new System.Drawing.Point(248, 65);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1102, 160);
+            this.groupBox3.Size = new System.Drawing.Size(1221, 160);
             this.groupBox3.TabIndex = 49;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "DATOS GENERALES:";
@@ -667,6 +631,39 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.label3.TabIndex = 38;
             this.label3.Text = "COSECHA:";
             // 
+            // ckbRaintforest
+            // 
+            this.ckbRaintforest.AutoSize = true;
+            this.ckbRaintforest.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.ckbRaintforest.Location = new System.Drawing.Point(633, 66);
+            this.ckbRaintforest.Name = "ckbRaintforest";
+            this.ckbRaintforest.Size = new System.Drawing.Size(210, 23);
+            this.ckbRaintforest.TabIndex = 37;
+            this.ckbRaintforest.Text = "RAINTFOREST ALLIANCE";
+            this.ckbRaintforest.UseVisualStyleBackColor = true;
+            // 
+            // ckbFairtrade
+            // 
+            this.ckbFairtrade.AutoSize = true;
+            this.ckbFairtrade.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.ckbFairtrade.Location = new System.Drawing.Point(633, 108);
+            this.ckbFairtrade.Name = "ckbFairtrade";
+            this.ckbFairtrade.Size = new System.Drawing.Size(115, 23);
+            this.ckbFairtrade.TabIndex = 38;
+            this.ckbFairtrade.Text = "FAIRTRADE";
+            this.ckbFairtrade.UseVisualStyleBackColor = true;
+            // 
+            // ckbOrganico
+            // 
+            this.ckbOrganico.AutoSize = true;
+            this.ckbOrganico.Font = new System.Drawing.Font("Century Gothic", 8F, System.Drawing.FontStyle.Bold);
+            this.ckbOrganico.Location = new System.Drawing.Point(633, 150);
+            this.ckbOrganico.Name = "ckbOrganico";
+            this.ckbOrganico.Size = new System.Drawing.Size(109, 23);
+            this.ckbOrganico.TabIndex = 39;
+            this.ckbOrganico.Text = "Orgánico";
+            this.ckbOrganico.UseVisualStyleBackColor = true;
+            // 
             // Frm_Notas_Peso
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
@@ -683,6 +680,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
             this.Name = "Frm_Notas_Peso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Notas_Peso";
+            this.Load += new System.EventHandler(this.Frm_Notas_Peso_Load);
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
@@ -722,9 +720,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtBodega;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RadioButton rbOrganico;
-        private System.Windows.Forms.RadioButton rbFairtrade;
-        private System.Windows.Forms.RadioButton rbRaintForest;
         private System.Windows.Forms.Panel pMenuVertical;
         private System.Windows.Forms.Label COAEDCAL;
         private System.Windows.Forms.Panel panel5;
@@ -753,5 +748,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Notas_de_Peso
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtCosecha;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.CheckBox ckbOrganico;
+        private System.Windows.Forms.CheckBox ckbFairtrade;
+        private System.Windows.Forms.CheckBox ckbRaintforest;
     }
 }

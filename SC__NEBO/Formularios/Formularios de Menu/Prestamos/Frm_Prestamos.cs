@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Runtime.InteropServices;
+
 namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
 {
     public partial class Frm_Prestamos : Form
@@ -17,6 +19,13 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             InitializeComponent();
         }
 
+        [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
+        private extern static void ReleaseCapture();
+
+        [DllImport("user32.DLL", EntryPoint = "SendMessage")]
+        private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
+
+
         Clases.DB db = new Clases.DB();
         Clases.Asistente a = new Clases.Asistente();
 
@@ -24,11 +33,149 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
 
         string prestamo_codigo, fecha_inicio, fecha_final;
         string cliente, identidad, telefono, estado_civil, municipio, depto, domicilio;
+
         string tipo_prestamo, cantidad_lps, interes, interes_moratorio, garantia, forma_pago, entregado_por;
+
+        private void btnRegresar_Click(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Prestamos.Frm_Reporte_Prestamo form = new Formularios_de_Menu.Prestamos.Frm_Reporte_Prestamo();
+            this.AddOwnedForm(form);
+            form.Show();
+            this.Hide();
+        }
+
+        private void btnBuscar_Cliente_Click(object sender, EventArgs e)
+        {
+            Formularios.Formularios_de_Menu.Clientes.Frm_Lista_Clientes lista_clientes = new Clientes.Frm_Lista_Clientes();
+            this.AddOwnedForm(lista_clientes);
+            lista_clientes.Show();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            string msg = "¿DESEA CANCELAR LA ACCION?";
+
+            if (a.Pregunta(msg) == true)
+            {
+                Clear();
+                Boot();
+            }
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            string msg = "¿DESEA ELIMINAR EL REGISTRO SELECCIONADO?";
+
+            if (a.Pregunta(msg) == true)
+            {
+                string id_cliente = txtPrestamo_Codigo.Text.Trim();
+
+                if (db.Delete("PRESTAMOS", "PRESTAMO_CODIGO", id_cliente) > 0)
+                {
+                    a.Aprueba("EL PRÉSTAMO SE ELIMINÓ CON EXITO");
+                    Clear();
+                    Boot();
+                }
+            }
+        }
+
+        private void btnGuardar_Click(object sender, EventArgs e)
+        {
+            ValidateData();
+
+            string msg = "¿DESEA GUARDAR ESTE PRÉSTAMO AL CLIENTE " + cliente + "?";
+
+            if (errors == 0)
+            {
+                if (a.Pregunta(msg) == true)
+                {
+                    //No se si ya se creo esta tabla
+                    string campos = "PRESTAMO_CODIGO, FECHA_INICIO, FECHA_FINAL, CLIENTE, NO_IDENTIDAD, TELEFONO, ESTADO_CIVIL, MUNICIPIO, DEPARTAMENTO, DOMICILIO, TIPO_PRESTAMO," +
+                        " CANTIDAD_LPS, INTERES, INTERES_MORATORIO, GARANTIA, FORMA_PAGO, ENTREGADO_POR";
+
+                    string valores = "'" + prestamo_codigo + "', '" + fecha_inicio + "','" + fecha_final + "','" + cliente + "', '" + identidad + "','" + telefono + "','" + estado_civil + "'" +
+                        "'" + municipio + "', '" + depto + "', '" + domicilio + "''" + tipo_prestamo + "', '" + cantidad_lps + "', '" + interes + "', '" + interes_moratorio + "', '" + garantia + "'" +
+                        "'" + forma_pago + "', '" + entregado_por + "',";
+
+
+                    if (db.Save("PRESTAMOS", campos, valores) > 0)
+                    {
+                        //db.RawSQL(query);
+                        db.SetLast("CLIENT");
+                        a.Aprueba("EL PRÉSTAMO DEL CLIENTE " + cliente + " HA SIDO REGISTRADO CON ÉXITO!");
+                        //db.SetLast(idcorre);
+                        Clear();
+                        Boot();
+                    }
+                }
+            }
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            ValidateData();
+
+            if (errors == 0)
+            {
+                string msg = "DESEA GUARDAR LOS CAMBIOS DEL REGISTRO SELECCIONADO";
+                if (a.Pregunta(msg) == true)
+                {
+                    string id_cliente = txtPrestamo_Codigo.Text.Trim();
+                    string stmt = "FECHA_INICIO='" + fecha_inicio + "',FECHA_FINAL='" + fecha_final + "',CLIENTE='" + cliente + "',NO_IDENTIDAD='" + identidad + "' " +
+                        "TELEFONO='" + telefono + "',ESTADO_CIVIL='" + estado_civil + "',MUNICIPIO='" + municipio + "',DEPARTAMENTO='" + depto + "',DOMICILIO='" + domicilio + "' " +
+                        "TIPO_PRESTAMO='" + tipo_prestamo + "',CANTIDAD_LPS='" + cantidad_lps + "',INTERES='" + interes + "',INTERES_MORATORIO='" + interes_moratorio + "' " +
+                        "GARANTIA='" + garantia + "',FORMA_PAGO='" + forma_pago + "',ENTREGADO_POR='" + entregado_por + "'";
+                    
+                    string condicion = "ID_CLIENTE='" + id_cliente + "'";
+
+                    if (db.Update("PRESTAMOS", stmt, condicion) > 0)
+                    {
+                        a.Aprueba("LOS CAMBIOS SE APLICARON CORRECTAMENTE!");
+                        Clear();
+                        Boot();
+                    }
+                }
+            }
+        }
+
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
+        {
+            btnNuevo.Enabled = false;
+            btnGuardar.Enabled = Clases.Auth.save == "S" ? true : false;
+            btnActualizar.Enabled = false;
+            btnEliminar.Enabled = false;
+            btnCancelar.Enabled = true;
+            btnRegresar.Enabled = false;
+
+            txtPrestamo_Codigo.Text = "CLT" + db.GetNext("CLIEN");
+
+            txtPrestamo_Codigo.Enabled = true;
+            cmbTipo_Prestamo.Enabled = true;
+            txtCantidad_Lps.Enabled = true;
+            txtIntereses.Enabled = true;
+            txtInteres_Moratorio.Enabled = true;
+            cmbGarantia.Enabled = true;
+            cmbForma_Pago.Enabled = true;
+            txtEntregado_por.Enabled = true;
+            
+
+            //txtNombre.Focus();
+        }
 
         private void Frm_Prestamos_Load(object sender, EventArgs e)
         {
-
+            
         }
 
         private void Clear()

@@ -118,6 +118,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnNuevo_Prestamo.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1
+        MAAA6mAAADqYAAAXcJy6UTwAAAAHdElNRQfnAQkDKwtkGX0YAAABaUlEQVRIS+2UvUrEQBSF4w+WgoUL
+        spWFrY2ovQ8hgp2CqC+QSrASG21stLQStBFsFNEXEETUQhBEsVCxFfzBzPXLeHc2G2IyG9ZuD3ybmTP3
+        nsvOhg3SEpFZGIAlMUY82db2fBE6Q3HEs9ryAS48bviPAWm1/hsYswJbCc4gKywLrwH3qaZmaHKAyDiM
+        FDDv6ksMWIC5XIxZd/XtK8qkfUWQfTU1fq/oCjbZT2rM36KwmSu6I3TC9ol0Qa8NyRNNvgNuCazAIOs9
+        eFf/SaJoGb9HIxtFgc8APmQUhli/ps5qHHLerbF1ceAz4ERrjxPeOYEhz0/n8RvZ0KQ4KB4Q/4WL9LM2
+        6l2yD7X/AJ7VP7WhSWH6DIjfruHEfkrbrfB29exGrbq0OSxgDPoI+NagF1iz/cZcw5v6Rza0rAjY16CY
+        OHgVvpwnMq2l5URAlaAHF9jIDucdWlpehFQI24BH+IALvEXo1BIUBD9Fpmf0jtUv+gAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
   <data name="btnRegresar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAIGNIUk0AAHomAACAhAAA+gAAAIDoAAB1

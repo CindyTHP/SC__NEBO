@@ -17,6 +17,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             InitializeComponent();
         }
 
-        
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

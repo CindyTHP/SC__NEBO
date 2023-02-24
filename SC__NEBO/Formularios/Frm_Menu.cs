@@ -82,7 +82,7 @@ namespace SC__NEBO.Formularios
 
         private void btnPrestamos_Click(object sender, EventArgs e)
         {
-            Formularios.Formularios_de_Menu.Prestamos.Frm_Prestamos form = new Formularios_de_Menu.Prestamos.Frm_Prestamos();
+            Formularios.Formularios_de_Menu.Prestamos.Frm_Reporte_Prestamo form = new Formularios_de_Menu.Prestamos.Frm_Reporte_Prestamo();
             this.AddOwnedForm(form);
             form.Show();
         }

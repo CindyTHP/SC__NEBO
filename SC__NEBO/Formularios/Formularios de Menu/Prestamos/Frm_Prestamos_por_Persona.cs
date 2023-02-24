@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 using System.Runtime.InteropServices;
 
-namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
+namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
 {
-    public partial class Frm_Lista_Clientes : Form
+    public partial class Frm_Prestamos_por_Persona : Form
     {
-        public Frm_Lista_Clientes()
+        public Frm_Prestamos_por_Persona()
         {
             InitializeComponent();
         }
@@ -25,17 +25,23 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         [DllImport("user32.DLL", EntryPoint = "SendMessage")]
         private extern static void SendMessage(System.IntPtr hWnd, int wMsg, int wParam, int lParam);
 
-        private void pbSalir_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void Frm_Lista_Clientes_Load(object sender, EventArgs e)
+        private void Frm_Prestamos_por_Persona_Load(object sender, EventArgs e)
         {
 
         }
 
         private void panel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            ReleaseCapture();
+            SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void pbSalir_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void label11_MouseDown(object sender, MouseEventArgs e)
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);

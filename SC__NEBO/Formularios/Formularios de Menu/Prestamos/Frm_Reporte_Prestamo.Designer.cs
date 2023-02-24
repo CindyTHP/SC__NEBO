@@ -29,19 +29,11 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Reporte_Prestamo));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Reporte_Prestamo));
             this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRegresar = new System.Windows.Forms.Button();
-            this.btnListaClientes = new System.Windows.Forms.Button();
-            this.btnFactura = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnRecibo = new System.Windows.Forms.Button();
-            this.btnPagare = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.pbMinimizar = new System.Windows.Forms.PictureBox();
-            this.pbSalir = new System.Windows.Forms.PictureBox();
-            this.pbMenu = new System.Windows.Forms.PictureBox();
             this.DgvData = new System.Windows.Forms.DataGridView();
             this.dcNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DcFechaEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -61,17 +53,28 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnNuevo_Prestamo = new System.Windows.Forms.Button();
+            this.btnRegresar = new System.Windows.Forms.Button();
+            this.btnListaClientes = new System.Windows.Forms.Button();
+            this.btnFactura = new System.Windows.Forms.Button();
+            this.btnRecibo = new System.Windows.Forms.Button();
+            this.btnPagare = new System.Windows.Forms.Button();
+            this.pbMinimizar = new System.Windows.Forms.PictureBox();
+            this.pbSalir = new System.Windows.Forms.PictureBox();
+            this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.lblResumen = new System.Windows.Forms.Label();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.DgvData)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvData)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.panel5.Controls.Add(this.btnNuevo_Prestamo);
             this.panel5.Controls.Add(this.btnRegresar);
             this.panel5.Controls.Add(this.btnListaClientes);
             this.panel5.Controls.Add(this.btnFactura);
@@ -84,55 +87,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.panel5.Size = new System.Drawing.Size(226, 738);
             this.panel5.TabIndex = 19;
             // 
-            // btnRegresar
-            // 
-            this.btnRegresar.FlatAppearance.BorderSize = 0;
-            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRegresar.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRegresar.ForeColor = System.Drawing.Color.White;
-            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
-            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRegresar.Location = new System.Drawing.Point(0, 46);
-            this.btnRegresar.Name = "btnRegresar";
-            this.btnRegresar.Size = new System.Drawing.Size(210, 40);
-            this.btnRegresar.TabIndex = 7;
-            this.btnRegresar.Text = "    REGRESAR";
-            this.btnRegresar.UseVisualStyleBackColor = true;
-            // 
-            // btnListaClientes
-            // 
-            this.btnListaClientes.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnListaClientes.FlatAppearance.BorderSize = 0;
-            this.btnListaClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.btnListaClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnListaClientes.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.btnListaClientes.ForeColor = System.Drawing.Color.White;
-            this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
-            this.btnListaClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListaClientes.Location = new System.Drawing.Point(0, 686);
-            this.btnListaClientes.Name = "btnListaClientes";
-            this.btnListaClientes.Size = new System.Drawing.Size(226, 52);
-            this.btnListaClientes.TabIndex = 6;
-            this.btnListaClientes.Text = "       NOTA DE PESO";
-            this.btnListaClientes.UseVisualStyleBackColor = true;
-            // 
-            // btnFactura
-            // 
-            this.btnFactura.FlatAppearance.BorderSize = 0;
-            this.btnFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.btnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFactura.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.btnFactura.ForeColor = System.Drawing.Color.White;
-            this.btnFactura.Image = ((System.Drawing.Image)(resources.GetObject("btnFactura.Image")));
-            this.btnFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFactura.Location = new System.Drawing.Point(3, 411);
-            this.btnFactura.Name = "btnFactura";
-            this.btnFactura.Size = new System.Drawing.Size(210, 40);
-            this.btnFactura.TabIndex = 5;
-            this.btnFactura.Text = "REPORTE";
-            this.btnFactura.UseVisualStyleBackColor = true;
-            // 
             // label12
             // 
             this.label12.AutoSize = true;
@@ -142,38 +96,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.label12.Size = new System.Drawing.Size(97, 20);
             this.label12.TabIndex = 0;
             this.label12.Text = "COAEDCAL";
-            // 
-            // btnRecibo
-            // 
-            this.btnRecibo.FlatAppearance.BorderSize = 0;
-            this.btnRecibo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.btnRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRecibo.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.btnRecibo.ForeColor = System.Drawing.Color.White;
-            this.btnRecibo.Image = ((System.Drawing.Image)(resources.GetObject("btnRecibo.Image")));
-            this.btnRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRecibo.Location = new System.Drawing.Point(3, 219);
-            this.btnRecibo.Name = "btnRecibo";
-            this.btnRecibo.Size = new System.Drawing.Size(210, 42);
-            this.btnRecibo.TabIndex = 1;
-            this.btnRecibo.Text = "RECIBO";
-            this.btnRecibo.UseVisualStyleBackColor = true;
-            // 
-            // btnPagare
-            // 
-            this.btnPagare.FlatAppearance.BorderSize = 0;
-            this.btnPagare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
-            this.btnPagare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPagare.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
-            this.btnPagare.ForeColor = System.Drawing.Color.White;
-            this.btnPagare.Image = ((System.Drawing.Image)(resources.GetObject("btnPagare.Image")));
-            this.btnPagare.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPagare.Location = new System.Drawing.Point(3, 171);
-            this.btnPagare.Name = "btnPagare";
-            this.btnPagare.Size = new System.Drawing.Size(210, 40);
-            this.btnPagare.TabIndex = 0;
-            this.btnPagare.Text = "PAGARÉ";
-            this.btnPagare.UseVisualStyleBackColor = true;
             // 
             // panel2
             // 
@@ -186,40 +108,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1635, 40);
             this.panel2.TabIndex = 18;
-            // 
-            // pbMinimizar
-            // 
-            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(1548, 8);
-            this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(27, 27);
-            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbMinimizar.TabIndex = 2;
-            this.pbMinimizar.TabStop = false;
-            // 
-            // pbSalir
-            // 
-            this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(1596, 8);
-            this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(27, 27);
-            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbSalir.TabIndex = 1;
-            this.pbSalir.TabStop = false;
-            // 
-            // pbMenu
-            // 
-            this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
-            this.pbMenu.Location = new System.Drawing.Point(6, 2);
-            this.pbMenu.Name = "pbMenu";
-            this.pbMenu.Size = new System.Drawing.Size(39, 39);
-            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbMenu.TabIndex = 0;
-            this.pbMenu.TabStop = false;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // DgvData
             // 
@@ -415,11 +304,155 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.label4.TabIndex = 98;
             this.label4.Text = "ESTADO:";
             // 
+            // btnNuevo_Prestamo
+            // 
+            this.btnNuevo_Prestamo.FlatAppearance.BorderSize = 0;
+            this.btnNuevo_Prestamo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.btnNuevo_Prestamo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNuevo_Prestamo.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.btnNuevo_Prestamo.ForeColor = System.Drawing.Color.White;
+            this.btnNuevo_Prestamo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo_Prestamo.Image")));
+            this.btnNuevo_Prestamo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNuevo_Prestamo.Location = new System.Drawing.Point(2, 151);
+            this.btnNuevo_Prestamo.Name = "btnNuevo_Prestamo";
+            this.btnNuevo_Prestamo.Size = new System.Drawing.Size(223, 42);
+            this.btnNuevo_Prestamo.TabIndex = 8;
+            this.btnNuevo_Prestamo.Text = "NUEVO";
+            this.btnNuevo_Prestamo.UseVisualStyleBackColor = true;
+            this.btnNuevo_Prestamo.Click += new System.EventHandler(this.btnNuevo_Prestamo_Click);
+            // 
+            // btnRegresar
+            // 
+            this.btnRegresar.FlatAppearance.BorderSize = 0;
+            this.btnRegresar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.btnRegresar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRegresar.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRegresar.ForeColor = System.Drawing.Color.White;
+            this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
+            this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRegresar.Location = new System.Drawing.Point(0, 46);
+            this.btnRegresar.Name = "btnRegresar";
+            this.btnRegresar.Size = new System.Drawing.Size(210, 40);
+            this.btnRegresar.TabIndex = 7;
+            this.btnRegresar.Text = "    REGRESAR";
+            this.btnRegresar.UseVisualStyleBackColor = true;
+            // 
+            // btnListaClientes
+            // 
+            this.btnListaClientes.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnListaClientes.FlatAppearance.BorderSize = 0;
+            this.btnListaClientes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.btnListaClientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnListaClientes.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.btnListaClientes.ForeColor = System.Drawing.Color.White;
+            this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
+            this.btnListaClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnListaClientes.Location = new System.Drawing.Point(0, 686);
+            this.btnListaClientes.Name = "btnListaClientes";
+            this.btnListaClientes.Size = new System.Drawing.Size(226, 52);
+            this.btnListaClientes.TabIndex = 6;
+            this.btnListaClientes.Text = "       NOTA DE PESO";
+            this.btnListaClientes.UseVisualStyleBackColor = true;
+            // 
+            // btnFactura
+            // 
+            this.btnFactura.FlatAppearance.BorderSize = 0;
+            this.btnFactura.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.btnFactura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFactura.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.btnFactura.ForeColor = System.Drawing.Color.White;
+            this.btnFactura.Image = ((System.Drawing.Image)(resources.GetObject("btnFactura.Image")));
+            this.btnFactura.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFactura.Location = new System.Drawing.Point(3, 411);
+            this.btnFactura.Name = "btnFactura";
+            this.btnFactura.Size = new System.Drawing.Size(210, 40);
+            this.btnFactura.TabIndex = 5;
+            this.btnFactura.Text = "REPORTE";
+            this.btnFactura.UseVisualStyleBackColor = true;
+            // 
+            // btnRecibo
+            // 
+            this.btnRecibo.FlatAppearance.BorderSize = 0;
+            this.btnRecibo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.btnRecibo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRecibo.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.btnRecibo.ForeColor = System.Drawing.Color.White;
+            this.btnRecibo.Image = ((System.Drawing.Image)(resources.GetObject("btnRecibo.Image")));
+            this.btnRecibo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRecibo.Location = new System.Drawing.Point(3, 247);
+            this.btnRecibo.Name = "btnRecibo";
+            this.btnRecibo.Size = new System.Drawing.Size(223, 42);
+            this.btnRecibo.TabIndex = 1;
+            this.btnRecibo.Text = "RECIBO";
+            this.btnRecibo.UseVisualStyleBackColor = true;
+            // 
+            // btnPagare
+            // 
+            this.btnPagare.FlatAppearance.BorderSize = 0;
+            this.btnPagare.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(157)))), ((int)(((byte)(143)))));
+            this.btnPagare.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPagare.Font = new System.Drawing.Font("Trebuchet MS", 10F, System.Drawing.FontStyle.Bold);
+            this.btnPagare.ForeColor = System.Drawing.Color.White;
+            this.btnPagare.Image = ((System.Drawing.Image)(resources.GetObject("btnPagare.Image")));
+            this.btnPagare.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPagare.Location = new System.Drawing.Point(3, 200);
+            this.btnPagare.Name = "btnPagare";
+            this.btnPagare.Size = new System.Drawing.Size(223, 40);
+            this.btnPagare.TabIndex = 0;
+            this.btnPagare.Text = "PAGARÉ";
+            this.btnPagare.UseVisualStyleBackColor = true;
+            // 
+            // pbMinimizar
+            // 
+            this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
+            this.pbMinimizar.Location = new System.Drawing.Point(1548, 8);
+            this.pbMinimizar.Name = "pbMinimizar";
+            this.pbMinimizar.Size = new System.Drawing.Size(27, 27);
+            this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbMinimizar.TabIndex = 2;
+            this.pbMinimizar.TabStop = false;
+            // 
+            // pbSalir
+            // 
+            this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
+            this.pbSalir.Location = new System.Drawing.Point(1596, 8);
+            this.pbSalir.Name = "pbSalir";
+            this.pbSalir.Size = new System.Drawing.Size(27, 27);
+            this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbSalir.TabIndex = 1;
+            this.pbSalir.TabStop = false;
+            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
+            // 
+            // pbMenu
+            // 
+            this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
+            this.pbMenu.Location = new System.Drawing.Point(6, 2);
+            this.pbMenu.Name = "pbMenu";
+            this.pbMenu.Size = new System.Drawing.Size(39, 39);
+            this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pbMenu.TabIndex = 0;
+            this.pbMenu.TabStop = false;
+            // 
+            // lblResumen
+            // 
+            this.lblResumen.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.lblResumen.Location = new System.Drawing.Point(1273, 723);
+            this.lblResumen.Name = "lblResumen";
+            this.lblResumen.Size = new System.Drawing.Size(304, 19);
+            this.lblResumen.TabIndex = 109;
+            this.lblResumen.Text = "Mostrando N de M registros.";
+            this.lblResumen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
             // Frm_Reporte_Prestamo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(1635, 778);
+            this.Controls.Add(this.lblResumen);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.dateTimePicker1);
@@ -437,13 +470,14 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.Name = "Frm_Reporte_Prestamo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Frm_Reporte_Prestamo";
+            this.Load += new System.EventHandler(this.Frm_Reporte_Prestamo_Load);
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.DgvData)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.DgvData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -481,5 +515,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnFactura;
+        private System.Windows.Forms.Button btnNuevo_Prestamo;
+        private System.Windows.Forms.Label lblResumen;
     }
 }

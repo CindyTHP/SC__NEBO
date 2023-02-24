@@ -123,6 +123,12 @@
     <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos.Designer.cs">
       <DependentUpon>Frm_Prestamos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos_por_Persona.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos_por_Persona.Designer.cs">
+      <DependentUpon>Frm_Prestamos_por_Persona.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\Formularios de Menu\Prestamos\Frm_Reporte_Prestamo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos.resx">
       <DependentUpon>Frm_Prestamos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Formularios de Menu\Prestamos\Frm_Prestamos_por_Persona.resx">
+      <DependentUpon>Frm_Prestamos_por_Persona.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Formularios de Menu\Prestamos\Frm_Reporte_Prestamo.resx">
       <DependentUpon>Frm_Reporte_Prestamo.cs</DependentUpon>

@@ -1,7 +1,7 @@
 ﻿
 namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
 {
-    partial class Frm_Pagos_Prestamos
+    partial class Frm_Prestamos_por_Persona
     {
         /// <summary>
         /// Required designer variable.
@@ -29,23 +29,25 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Pagos_Prestamos));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Prestamos_por_Persona));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label11 = new System.Windows.Forms.Label();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbSalir = new System.Windows.Forms.PictureBox();
             this.pbMenu = new System.Windows.Forms.PictureBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.dtpFecha = new System.Windows.Forms.DateTimePicker();
-            this.label4 = new System.Windows.Forms.Label();
-            this.txtCantidad_Abonar = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.DgvData = new System.Windows.Forms.DataGridView();
+            this.lblResumen = new System.Windows.Forms.Label();
+            this.txtAbono = new System.Windows.Forms.TextBox();
             this.dcNO = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DcFechaEntrega = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DcSaldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSeleccionar_Prestamo = new System.Windows.Forms.Button();
+            this.DcMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DcIntereses = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).BeginInit();
@@ -56,21 +58,35 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.pbMinimizar);
             this.panel2.Controls.Add(this.pbSalir);
             this.panel2.Controls.Add(this.pbMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(928, 40);
-            this.panel2.TabIndex = 17;
+            this.panel2.Size = new System.Drawing.Size(1183, 40);
+            this.panel2.TabIndex = 70;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold);
+            this.label11.ForeColor = System.Drawing.SystemColors.Control;
+            this.label11.Location = new System.Drawing.Point(494, 10);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(286, 23);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "CLIENTES DE LA COOPERTIVA";
+            this.label11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label11_MouseDown);
             // 
             // pbMinimizar
             // 
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(841, 8);
+            this.pbMinimizar.Location = new System.Drawing.Point(1097, 8);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(27, 27);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -82,7 +98,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(889, 8);
+            this.pbSalir.Location = new System.Drawing.Point(1145, 8);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(27, 27);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -100,62 +116,43 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.pbMenu.TabIndex = 0;
             this.pbMenu.TabStop = false;
             // 
-            // txtNombre
+            // txtCodigo
             // 
-            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(139, 63);
-            this.txtNombre.MaxLength = 14;
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(320, 30);
-            this.txtNombre.TabIndex = 85;
+            this.txtCodigo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.Location = new System.Drawing.Point(119, 65);
+            this.txtCodigo.MaxLength = 14;
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(179, 30);
+            this.txtCodigo.TabIndex = 85;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 66);
+            this.label1.Location = new System.Drawing.Point(29, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 22);
+            this.label1.Size = new System.Drawing.Size(92, 22);
             this.label1.TabIndex = 84;
-            this.label1.Text = "CLIENTE:";
+            this.label1.Text = "CODIGO:";
             // 
-            // dtpFecha
+            // txtNombre
             // 
-            this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpFecha.Location = new System.Drawing.Point(625, 66);
-            this.dtpFecha.Name = "dtpFecha";
-            this.dtpFecha.Size = new System.Drawing.Size(150, 30);
-            this.dtpFecha.TabIndex = 96;
+            this.txtNombre.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(458, 66);
+            this.txtNombre.MaxLength = 14;
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(320, 30);
+            this.txtNombre.TabIndex = 87;
             // 
-            // label4
+            // label2
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(550, 69);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 22);
-            this.label4.TabIndex = 95;
-            this.label4.Text = "FECHA:";
-            // 
-            // txtCantidad_Abonar
-            // 
-            this.txtCantidad_Abonar.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad_Abonar.Location = new System.Drawing.Point(324, 129);
-            this.txtCantidad_Abonar.MaxLength = 14;
-            this.txtCantidad_Abonar.Name = "txtCantidad_Abonar";
-            this.txtCantidad_Abonar.Size = new System.Drawing.Size(135, 30);
-            this.txtCantidad_Abonar.TabIndex = 100;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(121, 132);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(204, 22);
-            this.label5.TabIndex = 99;
-            this.label5.Text = "CANTIDAD A ABONAR:";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(372, 70);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(88, 22);
+            this.label2.TabIndex = 86;
+            this.label2.Text = "NOMBRE:";
             // 
             // DgvData
             // 
@@ -171,8 +168,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.DgvData.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dcNO,
             this.DcFechaEntrega,
-            this.DcSaldo});
-            this.DgvData.Location = new System.Drawing.Point(71, 193);
+            this.DcMonto,
+            this.DcIntereses});
+            this.DgvData.Location = new System.Drawing.Point(119, 234);
             this.DgvData.Name = "DgvData";
             this.DgvData.ReadOnly = true;
             this.DgvData.RowHeadersWidth = 5;
@@ -184,8 +182,27 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.DgvData.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvData.RowTemplate.Height = 28;
             this.DgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvData.Size = new System.Drawing.Size(772, 495);
-            this.DgvData.TabIndex = 101;
+            this.DgvData.Size = new System.Drawing.Size(955, 351);
+            this.DgvData.TabIndex = 88;
+            // 
+            // lblResumen
+            // 
+            this.lblResumen.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
+            this.lblResumen.Location = new System.Drawing.Point(770, 614);
+            this.lblResumen.Name = "lblResumen";
+            this.lblResumen.Size = new System.Drawing.Size(304, 19);
+            this.lblResumen.TabIndex = 108;
+            this.lblResumen.Text = "Mostrando N de M registros.";
+            this.lblResumen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // txtAbono
+            // 
+            this.txtAbono.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtAbono.Location = new System.Drawing.Point(895, 198);
+            this.txtAbono.MaxLength = 14;
+            this.txtAbono.Name = "txtAbono";
+            this.txtAbono.Size = new System.Drawing.Size(179, 30);
+            this.txtAbono.TabIndex = 109;
             // 
             // dcNO
             // 
@@ -201,48 +218,56 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.DcFechaEntrega.MinimumWidth = 8;
             this.DcFechaEntrega.Name = "DcFechaEntrega";
             this.DcFechaEntrega.ReadOnly = true;
-            this.DcFechaEntrega.Width = 200;
+            this.DcFechaEntrega.Width = 150;
             // 
-            // DcSaldo
+            // DcMonto
             // 
-            this.DcSaldo.HeaderText = "SALDO";
-            this.DcSaldo.MinimumWidth = 8;
-            this.DcSaldo.Name = "DcSaldo";
-            this.DcSaldo.ReadOnly = true;
-            this.DcSaldo.Width = 150;
+            this.DcMonto.HeaderText = "MONTO";
+            this.DcMonto.MinimumWidth = 8;
+            this.DcMonto.Name = "DcMonto";
+            this.DcMonto.ReadOnly = true;
+            this.DcMonto.Width = 150;
             // 
-            // btnSeleccionar_Prestamo
+            // DcIntereses
             // 
-            this.btnSeleccionar_Prestamo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            this.btnSeleccionar_Prestamo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnSeleccionar_Prestamo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSeleccionar_Prestamo.Location = new System.Drawing.Point(585, 132);
-            this.btnSeleccionar_Prestamo.Name = "btnSeleccionar_Prestamo";
-            this.btnSeleccionar_Prestamo.Size = new System.Drawing.Size(258, 38);
-            this.btnSeleccionar_Prestamo.TabIndex = 102;
-            this.btnSeleccionar_Prestamo.Text = "SELECCIONAR PRÉSTAMO";
-            this.btnSeleccionar_Prestamo.UseVisualStyleBackColor = false;
+            this.DcIntereses.HeaderText = "INTERÉSES";
+            this.DcIntereses.MinimumWidth = 8;
+            this.DcIntereses.Name = "DcIntereses";
+            this.DcIntereses.ReadOnly = true;
+            this.DcIntereses.Width = 120;
             // 
-            // Frm_Pagos_Prestamos
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(805, 200);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(81, 22);
+            this.label3.TabIndex = 110;
+            this.label3.Text = "ABONO:";
+            // 
+            // Frm_Prestamos_por_Persona
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(928, 730);
-            this.Controls.Add(this.btnSeleccionar_Prestamo);
+            this.ClientSize = new System.Drawing.Size(1183, 676);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtAbono);
+            this.Controls.Add(this.lblResumen);
             this.Controls.Add(this.DgvData);
-            this.Controls.Add(this.txtCantidad_Abonar);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dtpFecha);
-            this.Controls.Add(this.label4);
             this.Controls.Add(this.txtNombre);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel2);
-            this.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Frm_Pagos_Prestamos";
+            this.Name = "Frm_Prestamos_por_Persona";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Frm_Pagos_Prestamos";
+            this.Text = "Frm_Prestamos_por_Persona";
+            this.Load += new System.EventHandler(this.Frm_Prestamos_por_Persona_Load);
             this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSalir)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).EndInit();
@@ -255,19 +280,21 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
         #endregion
 
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.PictureBox pbSalir;
         private System.Windows.Forms.PictureBox pbMenu;
-        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DateTimePicker dtpFecha;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtCantidad_Abonar;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridView DgvData;
+        private System.Windows.Forms.Label lblResumen;
+        private System.Windows.Forms.TextBox txtAbono;
         private System.Windows.Forms.DataGridViewTextBoxColumn dcNO;
         private System.Windows.Forms.DataGridViewTextBoxColumn DcFechaEntrega;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DcSaldo;
-        private System.Windows.Forms.Button btnSeleccionar_Prestamo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DcMonto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DcIntereses;
+        private System.Windows.Forms.Label label3;
     }
 }

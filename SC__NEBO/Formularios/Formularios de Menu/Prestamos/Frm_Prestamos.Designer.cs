@@ -122,6 +122,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnRegresar.TabIndex = 7;
             this.btnRegresar.Text = "    REGRESAR";
             this.btnRegresar.UseVisualStyleBackColor = true;
+            this.btnRegresar.Click += new System.EventHandler(this.btnRegresar_Click);
             // 
             // btnListaClientes
             // 
@@ -155,6 +156,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnCancelar.TabIndex = 4;
             this.btnCancelar.Text = "    CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // label12
             // 
@@ -181,6 +183,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnEliminar.TabIndex = 3;
             this.btnEliminar.Text = "    ELIMINAR";
             this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnActualizar
             // 
@@ -197,6 +200,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnActualizar.TabIndex = 2;
             this.btnActualizar.Text = "        ACTUALIZAR";
             this.btnActualizar.UseVisualStyleBackColor = true;
+            this.btnActualizar.Click += new System.EventHandler(this.btnActualizar_Click);
             // 
             // btnGuardar
             // 
@@ -213,6 +217,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnGuardar.TabIndex = 1;
             this.btnGuardar.Text = "   GUARDAR";
             this.btnGuardar.UseVisualStyleBackColor = true;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -229,6 +234,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnNuevo.TabIndex = 0;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // panel2
             // 
@@ -241,6 +247,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1433, 40);
             this.panel2.TabIndex = 16;
+            this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
             // pbMinimizar
             // 
@@ -265,6 +272,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbSalir.TabIndex = 1;
             this.pbSalir.TabStop = false;
+            this.pbSalir.Click += new System.EventHandler(this.pbSalir_Click);
             // 
             // pbMenu
             // 
@@ -426,6 +434,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnBuscar_Cliente.Size = new System.Drawing.Size(42, 38);
             this.btnBuscar_Cliente.TabIndex = 50;
             this.btnBuscar_Cliente.UseVisualStyleBackColor = false;
+            this.btnBuscar_Cliente.Click += new System.EventHandler(this.btnBuscar_Cliente_Click);
             // 
             // txtIdentidad
             // 

@@ -30,7 +30,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Lista_Clientes));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbSalir = new System.Windows.Forms.PictureBox();
@@ -50,14 +50,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
             this.panel2.Controls.Add(this.pbMinimizar);
             this.panel2.Controls.Add(this.pbSalir);
             this.panel2.Controls.Add(this.pbMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1526, 40);
+            this.panel2.Size = new System.Drawing.Size(913, 27);
             this.panel2.TabIndex = 14;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -66,9 +67,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(1439, 8);
+            this.pbMinimizar.Location = new System.Drawing.Point(855, 5);
+            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.pbMinimizar.Name = "pbMinimizar";
-            this.pbMinimizar.Size = new System.Drawing.Size(27, 27);
+            this.pbMinimizar.Size = new System.Drawing.Size(18, 18);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMinimizar.TabIndex = 2;
             this.pbMinimizar.TabStop = false;
@@ -78,9 +80,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(1487, 8);
+            this.pbSalir.Location = new System.Drawing.Point(887, 5);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
             this.pbSalir.Name = "pbSalir";
-            this.pbSalir.Size = new System.Drawing.Size(27, 27);
+            this.pbSalir.Size = new System.Drawing.Size(18, 18);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbSalir.TabIndex = 1;
             this.pbSalir.TabStop = false;
@@ -89,9 +92,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // pbMenu
             // 
             this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
-            this.pbMenu.Location = new System.Drawing.Point(6, 2);
+            this.pbMenu.Location = new System.Drawing.Point(4, 1);
+            this.pbMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pbMenu.Name = "pbMenu";
-            this.pbMenu.Size = new System.Drawing.Size(39, 39);
+            this.pbMenu.Size = new System.Drawing.Size(26, 26);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMenu.TabIndex = 0;
             this.pbMenu.TabStop = false;
@@ -113,19 +117,20 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             this.DcDNI,
             this.DcTelefono,
             this.DcDomicilio});
-            this.DgvData.Location = new System.Drawing.Point(12, 63);
+            this.DgvData.Location = new System.Drawing.Point(8, 42);
+            this.DgvData.Margin = new System.Windows.Forms.Padding(2);
             this.DgvData.Name = "DgvData";
             this.DgvData.ReadOnly = true;
             this.DgvData.RowHeadersWidth = 5;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.White;
-            this.DgvData.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            this.DgvData.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DgvData.RowTemplate.Height = 28;
             this.DgvData.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvData.Size = new System.Drawing.Size(1455, 546);
+            this.DgvData.Size = new System.Drawing.Size(970, 364);
             this.DgvData.TabIndex = 37;
             // 
             // dcIDCliente
@@ -170,13 +175,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             // 
             // Frm_Lista_Clientes
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(144F, 144F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(1526, 794);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(913, 499);
             this.Controls.Add(this.DgvData);
             this.Controls.Add(this.panel2);
             this.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Lista_Clientes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Frm_Lista_Clientes";

@@ -30,7 +30,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Frm_Liquidacion));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtpFecha = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
@@ -81,6 +81,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.pbMinimizar = new System.Windows.Forms.PictureBox();
             this.pbSalir = new System.Windows.Forms.PictureBox();
             this.pbMenu = new System.Windows.Forms.PictureBox();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.groupBox1.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -114,7 +117,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.dtpFecha.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold);
             this.dtpFecha.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFecha.Location = new System.Drawing.Point(523, 30);
-            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFecha.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFecha.Name = "dtpFecha";
             this.dtpFecha.Size = new System.Drawing.Size(101, 22);
             this.dtpFecha.TabIndex = 58;
@@ -133,7 +136,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(122, 69);
-            this.txtNombre.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNombre.Margin = new System.Windows.Forms.Padding(2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(502, 24);
             this.txtNombre.TabIndex = 52;
@@ -143,7 +146,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.btnBuscarCliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnBuscarCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarCliente.Image")));
             this.btnBuscarCliente.Location = new System.Drawing.Point(628, 69);
-            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarCliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarCliente.Name = "btnBuscarCliente";
             this.btnBuscarCliente.Size = new System.Drawing.Size(28, 25);
             this.btnBuscarCliente.TabIndex = 55;
@@ -163,7 +166,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtDireccion
             // 
             this.txtDireccion.Location = new System.Drawing.Point(122, 107);
-            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDireccion.Margin = new System.Windows.Forms.Padding(2);
             this.txtDireccion.Name = "txtDireccion";
             this.txtDireccion.Size = new System.Drawing.Size(502, 24);
             this.txtDireccion.TabIndex = 54;
@@ -173,7 +176,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.txtIdLiquidacion.BackColor = System.Drawing.SystemColors.Control;
             this.txtIdLiquidacion.ForeColor = System.Drawing.Color.Red;
             this.txtIdLiquidacion.Location = new System.Drawing.Point(122, 32);
-            this.txtIdLiquidacion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdLiquidacion.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdLiquidacion.Name = "txtIdLiquidacion";
             this.txtIdLiquidacion.Size = new System.Drawing.Size(123, 24);
             this.txtIdLiquidacion.TabIndex = 50;
@@ -231,7 +234,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtNetoPagar
             // 
             this.txtNetoPagar.Location = new System.Drawing.Point(644, 182);
-            this.txtNetoPagar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNetoPagar.Margin = new System.Windows.Forms.Padding(2);
             this.txtNetoPagar.Name = "txtNetoPagar";
             this.txtNetoPagar.Size = new System.Drawing.Size(136, 24);
             this.txtNetoPagar.TabIndex = 83;
@@ -250,7 +253,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtOtros
             // 
             this.txtOtros.Location = new System.Drawing.Point(469, 135);
-            this.txtOtros.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOtros.Margin = new System.Windows.Forms.Padding(2);
             this.txtOtros.Name = "txtOtros";
             this.txtOtros.Size = new System.Drawing.Size(117, 24);
             this.txtOtros.TabIndex = 81;
@@ -269,7 +272,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtGastosAdmon
             // 
             this.txtGastosAdmon.Location = new System.Drawing.Point(174, 135);
-            this.txtGastosAdmon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtGastosAdmon.Margin = new System.Windows.Forms.Padding(2);
             this.txtGastosAdmon.Name = "txtGastosAdmon";
             this.txtGastosAdmon.Size = new System.Drawing.Size(91, 24);
             this.txtGastosAdmon.TabIndex = 79;
@@ -288,7 +291,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtAportaciones
             // 
             this.txtAportaciones.Location = new System.Drawing.Point(469, 96);
-            this.txtAportaciones.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAportaciones.Margin = new System.Windows.Forms.Padding(2);
             this.txtAportaciones.Name = "txtAportaciones";
             this.txtAportaciones.Size = new System.Drawing.Size(117, 24);
             this.txtAportaciones.TabIndex = 77;
@@ -307,7 +310,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtIntereses
             // 
             this.txtIntereses.Location = new System.Drawing.Point(469, 62);
-            this.txtIntereses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntereses.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntereses.Name = "txtIntereses";
             this.txtIntereses.Size = new System.Drawing.Size(117, 24);
             this.txtIntereses.TabIndex = 75;
@@ -328,7 +331,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
             this.button3.Location = new System.Drawing.Point(589, 21);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(28, 25);
             this.button3.TabIndex = 66;
@@ -338,7 +341,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtAntxCob
             // 
             this.txtAntxCob.Location = new System.Drawing.Point(469, 22);
-            this.txtAntxCob.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAntxCob.Margin = new System.Windows.Forms.Padding(2);
             this.txtAntxCob.Name = "txtAntxCob";
             this.txtAntxCob.Size = new System.Drawing.Size(117, 24);
             this.txtAntxCob.TabIndex = 72;
@@ -357,7 +360,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtFletes
             // 
             this.txtFletes.Location = new System.Drawing.Point(150, 96);
-            this.txtFletes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtFletes.Margin = new System.Windows.Forms.Padding(2);
             this.txtFletes.Name = "txtFletes";
             this.txtFletes.Size = new System.Drawing.Size(115, 24);
             this.txtFletes.TabIndex = 70;
@@ -387,7 +390,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtBeneficioHumedo
             // 
             this.txtBeneficioHumedo.Location = new System.Drawing.Point(150, 25);
-            this.txtBeneficioHumedo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBeneficioHumedo.Margin = new System.Windows.Forms.Padding(2);
             this.txtBeneficioHumedo.Name = "txtBeneficioHumedo";
             this.txtBeneficioHumedo.Size = new System.Drawing.Size(115, 24);
             this.txtBeneficioHumedo.TabIndex = 68;
@@ -395,7 +398,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtBeneficiadoSeco
             // 
             this.txtBeneficiadoSeco.Location = new System.Drawing.Point(150, 62);
-            this.txtBeneficiadoSeco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtBeneficiadoSeco.Margin = new System.Windows.Forms.Padding(2);
             this.txtBeneficiadoSeco.Name = "txtBeneficiadoSeco";
             this.txtBeneficiadoSeco.Size = new System.Drawing.Size(115, 24);
             this.txtBeneficiadoSeco.TabIndex = 66;
@@ -442,7 +445,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtTotal
             // 
             this.txtTotal.Location = new System.Drawing.Point(671, 179);
-            this.txtTotal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(97, 24);
             this.txtTotal.TabIndex = 64;
@@ -462,7 +465,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // 
             this.txtTotalDeQQ.Enabled = false;
             this.txtTotalDeQQ.Location = new System.Drawing.Point(671, 86);
-            this.txtTotalDeQQ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTotalDeQQ.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotalDeQQ.Name = "txtTotalDeQQ";
             this.txtTotalDeQQ.Size = new System.Drawing.Size(97, 24);
             this.txtTotalDeQQ.TabIndex = 62;
@@ -480,8 +483,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // 
             // dgvNotasPeso
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSeaGreen;
-            this.dgvNotasPeso.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.dgvNotasPeso.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvNotasPeso.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
             this.dgvNotasPeso.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvNotasPeso.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -527,7 +530,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // txtPrecioPorQQ
             // 
             this.txtPrecioPorQQ.Location = new System.Drawing.Point(671, 139);
-            this.txtPrecioPorQQ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrecioPorQQ.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrecioPorQQ.Name = "txtPrecioPorQQ";
             this.txtPrecioPorQQ.Size = new System.Drawing.Size(97, 24);
             this.txtPrecioPorQQ.TabIndex = 59;
@@ -559,7 +562,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.btnBuscarNotaPeso.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
             this.btnBuscarNotaPeso.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscarNotaPeso.Image")));
             this.btnBuscarNotaPeso.Location = new System.Drawing.Point(164, 27);
-            this.btnBuscarNotaPeso.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarNotaPeso.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarNotaPeso.Name = "btnBuscarNotaPeso";
             this.btnBuscarNotaPeso.Size = new System.Drawing.Size(28, 25);
             this.btnBuscarNotaPeso.TabIndex = 59;
@@ -567,16 +570,16 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(70)))), ((int)(((byte)(83)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.pbMinimizar);
             this.panel2.Controls.Add(this.pbSalir);
             this.panel2.Controls.Add(this.pbMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(815, 27);
+            this.panel2.Size = new System.Drawing.Size(835, 27);
             this.panel2.TabIndex = 69;
             // 
             // label11
@@ -596,8 +599,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(757, 5);
-            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMinimizar.Location = new System.Drawing.Point(777, 5);
+            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(18, 18);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -609,8 +612,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(789, 5);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSalir.Location = new System.Drawing.Point(809, 5);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(18, 18);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -622,17 +625,48 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
             // 
             this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
             this.pbMenu.Location = new System.Drawing.Point(4, 1);
-            this.pbMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pbMenu.Name = "pbMenu";
             this.pbMenu.Size = new System.Drawing.Size(26, 26);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pbMenu.TabIndex = 0;
             this.pbMenu.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 665);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(835, 5);
+            this.panel1.TabIndex = 70;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(830, 27);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 638);
+            this.panel3.TabIndex = 71;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel4.Location = new System.Drawing.Point(0, 27);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 638);
+            this.panel4.TabIndex = 0;
+            // 
             // Frm_Liquidacion
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(815, 681);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(835, 670);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
@@ -711,5 +745,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Liquidacion
         private System.Windows.Forms.PictureBox pbMinimizar;
         private System.Windows.Forms.PictureBox pbSalir;
         private System.Windows.Forms.PictureBox pbMenu;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

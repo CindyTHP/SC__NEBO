@@ -103,6 +103,11 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Clientes
             txtDepto.Clear();
         }
 
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
         private void Boot()
         {
             btnNuevo.Enabled = Clases.Auth.save == "S" ? true : false;

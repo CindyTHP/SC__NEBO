@@ -73,14 +73,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.txtCantidad_Lps = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.cmbGarantia = new System.Windows.Forms.ComboBox();
-            this.txtInteres_Moratorio = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.txtIntereses = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.cmbTipo_Prestamo = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
             this.lblMsg = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMinimizar)).BeginInit();
@@ -88,11 +89,12 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel5
             // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(162)))), ((int)(((byte)(107)))));
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
             this.panel5.Controls.Add(this.btnRegresar);
             this.panel5.Controls.Add(this.btnListaClientes);
             this.panel5.Controls.Add(this.btnCancelar);
@@ -103,9 +105,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.panel5.Controls.Add(this.btnNuevo);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 27);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(151, 516);
+            this.panel5.Size = new System.Drawing.Size(151, 482);
             this.panel5.TabIndex = 17;
             // 
             // btnRegresar
@@ -118,7 +120,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnRegresar.Image = ((System.Drawing.Image)(resources.GetObject("btnRegresar.Image")));
             this.btnRegresar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnRegresar.Location = new System.Drawing.Point(0, 31);
-            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegresar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegresar.Name = "btnRegresar";
             this.btnRegresar.Size = new System.Drawing.Size(140, 27);
             this.btnRegresar.TabIndex = 7;
@@ -136,8 +138,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnListaClientes.ForeColor = System.Drawing.Color.White;
             this.btnListaClientes.Image = ((System.Drawing.Image)(resources.GetObject("btnListaClientes.Image")));
             this.btnListaClientes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnListaClientes.Location = new System.Drawing.Point(0, 481);
-            this.btnListaClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnListaClientes.Location = new System.Drawing.Point(0, 447);
+            this.btnListaClientes.Margin = new System.Windows.Forms.Padding(2);
             this.btnListaClientes.Name = "btnListaClientes";
             this.btnListaClientes.Size = new System.Drawing.Size(151, 35);
             this.btnListaClientes.TabIndex = 6;
@@ -154,7 +156,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnCancelar.Image = ((System.Drawing.Image)(resources.GetObject("btnCancelar.Image")));
             this.btnCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCancelar.Location = new System.Drawing.Point(2, 242);
-            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCancelar.Margin = new System.Windows.Forms.Padding(2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(140, 27);
             this.btnCancelar.TabIndex = 4;
@@ -183,7 +185,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnEliminar.Image = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Image")));
             this.btnEliminar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Location = new System.Drawing.Point(0, 209);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(140, 33);
             this.btnEliminar.TabIndex = 3;
@@ -201,7 +203,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnActualizar.Image = ((System.Drawing.Image)(resources.GetObject("btnActualizar.Image")));
             this.btnActualizar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnActualizar.Location = new System.Drawing.Point(2, 178);
-            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnActualizar.Margin = new System.Windows.Forms.Padding(2);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(140, 27);
             this.btnActualizar.TabIndex = 2;
@@ -219,7 +221,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnGuardar.Image = ((System.Drawing.Image)(resources.GetObject("btnGuardar.Image")));
             this.btnGuardar.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Location = new System.Drawing.Point(2, 146);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(140, 28);
             this.btnGuardar.TabIndex = 1;
@@ -237,7 +239,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnNuevo.Image = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Image")));
             this.btnNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Location = new System.Drawing.Point(2, 114);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(140, 27);
             this.btnNuevo.TabIndex = 0;
@@ -247,15 +249,15 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(162)))), ((int)(((byte)(107)))));
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
             this.panel2.Controls.Add(this.pbMinimizar);
             this.panel2.Controls.Add(this.pbSalir);
             this.panel2.Controls.Add(this.pbMenu);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(955, 27);
+            this.panel2.Size = new System.Drawing.Size(963, 27);
             this.panel2.TabIndex = 16;
             this.panel2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel2_MouseDown);
             // 
@@ -264,8 +266,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.pbMinimizar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbMinimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbMinimizar.Image = ((System.Drawing.Image)(resources.GetObject("pbMinimizar.Image")));
-            this.pbMinimizar.Location = new System.Drawing.Point(897, 5);
-            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMinimizar.Location = new System.Drawing.Point(905, 5);
+            this.pbMinimizar.Margin = new System.Windows.Forms.Padding(2);
             this.pbMinimizar.Name = "pbMinimizar";
             this.pbMinimizar.Size = new System.Drawing.Size(18, 18);
             this.pbMinimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -277,8 +279,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.pbSalir.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pbSalir.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbSalir.Image = ((System.Drawing.Image)(resources.GetObject("pbSalir.Image")));
-            this.pbSalir.Location = new System.Drawing.Point(929, 5);
-            this.pbSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbSalir.Location = new System.Drawing.Point(937, 5);
+            this.pbSalir.Margin = new System.Windows.Forms.Padding(2);
             this.pbSalir.Name = "pbSalir";
             this.pbSalir.Size = new System.Drawing.Size(18, 18);
             this.pbSalir.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -290,7 +292,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.pbMenu.Image = ((System.Drawing.Image)(resources.GetObject("pbMenu.Image")));
             this.pbMenu.Location = new System.Drawing.Point(4, 1);
-            this.pbMenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pbMenu.Margin = new System.Windows.Forms.Padding(2);
             this.pbMenu.Name = "pbMenu";
             this.pbMenu.Size = new System.Drawing.Size(26, 26);
             this.pbMenu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -302,7 +304,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.dtpFecha_Inicio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha_Inicio.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFecha_Inicio.Location = new System.Drawing.Point(589, 65);
-            this.dtpFecha_Inicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFecha_Inicio.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFecha_Inicio.Name = "dtpFecha_Inicio";
             this.dtpFecha_Inicio.Size = new System.Drawing.Size(101, 22);
             this.dtpFecha_Inicio.TabIndex = 91;
@@ -337,9 +339,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(167, 120);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
             this.groupBox3.Size = new System.Drawing.Size(770, 146);
             this.groupBox3.TabIndex = 92;
             this.groupBox3.TabStop = false;
@@ -355,7 +357,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             "DIVORCIADO(A)",
             "VIUDO(A)"});
             this.cmbEstadoCivil.Location = new System.Drawing.Point(95, 71);
-            this.cmbEstadoCivil.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbEstadoCivil.Margin = new System.Windows.Forms.Padding(2);
             this.cmbEstadoCivil.Name = "cmbEstadoCivil";
             this.cmbEstadoCivil.Size = new System.Drawing.Size(126, 24);
             this.cmbEstadoCivil.TabIndex = 81;
@@ -375,7 +377,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.txtDepto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDepto.Location = new System.Drawing.Point(617, 72);
-            this.txtDepto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDepto.Margin = new System.Windows.Forms.Padding(2);
             this.txtDepto.Name = "txtDepto";
             this.txtDepto.Size = new System.Drawing.Size(142, 22);
             this.txtDepto.TabIndex = 79;
@@ -395,7 +397,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.txtMunicipio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtMunicipio.Location = new System.Drawing.Point(423, 73);
-            this.txtMunicipio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMunicipio.Margin = new System.Windows.Forms.Padding(2);
             this.txtMunicipio.Name = "txtMunicipio";
             this.txtMunicipio.Size = new System.Drawing.Size(142, 22);
             this.txtMunicipio.TabIndex = 77;
@@ -415,7 +417,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.txtDomicilio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtDomicilio.Location = new System.Drawing.Point(93, 109);
-            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDomicilio.Margin = new System.Windows.Forms.Padding(2);
             this.txtDomicilio.Name = "txtDomicilio";
             this.txtDomicilio.Size = new System.Drawing.Size(666, 22);
             this.txtDomicilio.TabIndex = 75;
@@ -446,7 +448,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // txtTelefono
             // 
             this.txtTelefono.Location = new System.Drawing.Point(684, 30);
-            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTelefono.Margin = new System.Windows.Forms.Padding(2);
             this.txtTelefono.Mask = "9999-9999";
             this.txtTelefono.Name = "txtTelefono";
             this.txtTelefono.Size = new System.Drawing.Size(73, 22);
@@ -457,7 +459,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.btnBuscar_Cliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(162)))), ((int)(((byte)(107)))));
             this.btnBuscar_Cliente.Image = ((System.Drawing.Image)(resources.GetObject("btnBuscar_Cliente.Image")));
             this.btnBuscar_Cliente.Location = new System.Drawing.Point(347, 28);
-            this.btnBuscar_Cliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscar_Cliente.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscar_Cliente.Name = "btnBuscar_Cliente";
             this.btnBuscar_Cliente.Size = new System.Drawing.Size(28, 25);
             this.btnBuscar_Cliente.TabIndex = 50;
@@ -468,7 +470,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.txtIdentidad.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtIdentidad.Location = new System.Drawing.Point(466, 31);
-            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIdentidad.Margin = new System.Windows.Forms.Padding(2);
             this.txtIdentidad.MaxLength = 14;
             this.txtIdentidad.Name = "txtIdentidad";
             this.txtIdentidad.Size = new System.Drawing.Size(142, 22);
@@ -489,7 +491,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.txtCliente.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtCliente.Location = new System.Drawing.Point(73, 31);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(273, 22);
             this.txtCliente.TabIndex = 45;
@@ -509,7 +511,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.txtPrestamo_Codigo.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtPrestamo_Codigo.Location = new System.Drawing.Point(296, 65);
-            this.txtPrestamo_Codigo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPrestamo_Codigo.Margin = new System.Windows.Forms.Padding(2);
             this.txtPrestamo_Codigo.MaxLength = 14;
             this.txtPrestamo_Codigo.Name = "txtPrestamo_Codigo";
             this.txtPrestamo_Codigo.Size = new System.Drawing.Size(142, 22);
@@ -531,7 +533,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.dtpFecha_Final.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpFecha_Final.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpFecha_Final.Location = new System.Drawing.Point(812, 65);
-            this.dtpFecha_Final.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dtpFecha_Final.Margin = new System.Windows.Forms.Padding(2);
             this.dtpFecha_Final.Name = "dtpFecha_Final";
             this.dtpFecha_Final.Size = new System.Drawing.Size(101, 22);
             this.dtpFecha_Final.TabIndex = 94;
@@ -556,8 +558,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.groupBox1.Controls.Add(this.txtCantidad_Lps);
             this.groupBox1.Controls.Add(this.label16);
             this.groupBox1.Controls.Add(this.cmbGarantia);
-            this.groupBox1.Controls.Add(this.txtInteres_Moratorio);
-            this.groupBox1.Controls.Add(this.label15);
             this.groupBox1.Controls.Add(this.txtIntereses);
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.label11);
@@ -565,10 +565,10 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(167, 285);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.groupBox1.Size = new System.Drawing.Size(770, 152);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(770, 131);
             this.groupBox1.TabIndex = 106;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DEL PRÉSTAMO:";
@@ -576,8 +576,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // txtEntregado_por
             // 
             this.txtEntregado_por.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEntregado_por.Location = new System.Drawing.Point(129, 114);
-            this.txtEntregado_por.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtEntregado_por.Location = new System.Drawing.Point(576, 75);
+            this.txtEntregado_por.Margin = new System.Windows.Forms.Padding(2);
             this.txtEntregado_por.Name = "txtEntregado_por";
             this.txtEntregado_por.Size = new System.Drawing.Size(183, 22);
             this.txtEntregado_por.TabIndex = 119;
@@ -586,7 +586,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(13, 117);
+            this.label18.Location = new System.Drawing.Point(460, 78);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(109, 17);
@@ -601,8 +601,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             "CHEQUE",
             "TRANSFERENCIA",
             "EFECTIVO"});
-            this.cmbForma_Pago.Location = new System.Drawing.Point(638, 73);
-            this.cmbForma_Pago.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbForma_Pago.Location = new System.Drawing.Point(326, 73);
+            this.cmbForma_Pago.Margin = new System.Windows.Forms.Padding(2);
             this.cmbForma_Pago.Name = "cmbForma_Pago";
             this.cmbForma_Pago.Size = new System.Drawing.Size(126, 24);
             this.cmbForma_Pago.TabIndex = 117;
@@ -611,7 +611,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(541, 75);
+            this.label17.Location = new System.Drawing.Point(229, 75);
             this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(93, 17);
@@ -621,8 +621,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // txtCantidad_Lps
             // 
             this.txtCantidad_Lps.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCantidad_Lps.Location = new System.Drawing.Point(378, 31);
-            this.txtCantidad_Lps.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantidad_Lps.Location = new System.Drawing.Point(447, 30);
+            this.txtCantidad_Lps.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantidad_Lps.Name = "txtCantidad_Lps";
             this.txtCantidad_Lps.Size = new System.Drawing.Size(142, 22);
             this.txtCantidad_Lps.TabIndex = 115;
@@ -631,7 +631,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(281, 33);
+            this.label16.Location = new System.Drawing.Point(350, 32);
             this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(96, 17);
@@ -646,57 +646,37 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             "POR COSECHA",
             "HIPOTECARIA",
             "FIDUCIARIA"});
-            this.cmbGarantia.Location = new System.Drawing.Point(394, 72);
-            this.cmbGarantia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbGarantia.Location = new System.Drawing.Point(82, 72);
+            this.cmbGarantia.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGarantia.Name = "cmbGarantia";
             this.cmbGarantia.Size = new System.Drawing.Size(126, 24);
             this.cmbGarantia.TabIndex = 113;
             // 
-            // txtInteres_Moratorio
-            // 
-            this.txtInteres_Moratorio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtInteres_Moratorio.Location = new System.Drawing.Point(159, 73);
-            this.txtInteres_Moratorio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtInteres_Moratorio.Name = "txtInteres_Moratorio";
-            this.txtInteres_Moratorio.Size = new System.Drawing.Size(142, 22);
-            this.txtInteres_Moratorio.TabIndex = 112;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(7, 75);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(149, 17);
-            this.label15.TabIndex = 111;
-            this.label15.Text = "INTERÉSES MORATÓRIOS:";
-            // 
             // txtIntereses
             // 
             this.txtIntereses.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtIntereses.Location = new System.Drawing.Point(622, 30);
-            this.txtIntereses.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtIntereses.Location = new System.Drawing.Point(699, 30);
+            this.txtIntereses.Margin = new System.Windows.Forms.Padding(2);
             this.txtIntereses.Name = "txtIntereses";
-            this.txtIntereses.Size = new System.Drawing.Size(142, 22);
+            this.txtIntereses.Size = new System.Drawing.Size(61, 22);
             this.txtIntereses.TabIndex = 110;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(556, 33);
+            this.label14.Location = new System.Drawing.Point(617, 33);
             this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(67, 17);
+            this.label14.Size = new System.Drawing.Size(79, 17);
             this.label14.TabIndex = 109;
-            this.label14.Text = "INTERÉSES:";
+            this.label14.Text = "INTERÉSES %:";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(320, 75);
+            this.label11.Location = new System.Drawing.Point(8, 75);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(72, 17);
@@ -716,9 +696,9 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             "ANTICIPO POR TRABAJO",
             "ANTICIPO DE EMPLEADO"});
             this.cmbTipo_Prestamo.Location = new System.Drawing.Point(129, 30);
-            this.cmbTipo_Prestamo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbTipo_Prestamo.Margin = new System.Windows.Forms.Padding(2);
             this.cmbTipo_Prestamo.Name = "cmbTipo_Prestamo";
-            this.cmbTipo_Prestamo.Size = new System.Drawing.Size(126, 24);
+            this.cmbTipo_Prestamo.Size = new System.Drawing.Size(193, 24);
             this.cmbTipo_Prestamo.TabIndex = 107;
             // 
             // label7
@@ -744,11 +724,42 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.lblMsg.Text = "---";
             this.lblMsg.Visible = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
+            this.panel1.Controls.Add(this.panel3);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(151, 504);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(812, 5);
+            this.panel1.TabIndex = 108;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel3.Location = new System.Drawing.Point(807, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(5, 5);
+            this.panel3.TabIndex = 1;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(101)))), ((int)(((byte)(158)))));
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel4.Location = new System.Drawing.Point(958, 27);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(5, 477);
+            this.panel4.TabIndex = 109;
+            // 
             // Frm_Prestamos
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(236)))), ((int)(((byte)(236)))), ((int)(((byte)(236)))));
-            this.ClientSize = new System.Drawing.Size(955, 543);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(244)))), ((int)(((byte)(244)))));
+            this.ClientSize = new System.Drawing.Size(963, 509);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.lblMsg);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dtpFecha_Final);
@@ -761,7 +772,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_Prestamos";
             this.Opacity = 0.8D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -777,6 +788,7 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
             this.groupBox3.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -823,8 +835,6 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
         private System.Windows.Forms.TextBox txtCantidad_Lps;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.ComboBox cmbGarantia;
-        private System.Windows.Forms.TextBox txtInteres_Moratorio;
-        private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtIntereses;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label11;
@@ -835,5 +845,8 @@ namespace SC__NEBO.Formularios.Formularios_de_Menu.Prestamos
         private System.Windows.Forms.ComboBox cmbForma_Pago;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label lblMsg;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }

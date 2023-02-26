@@ -54,6 +54,7 @@ namespace SC__NEBO.Formularios
 
         private void btnClientes_Click_1(object sender, EventArgs e)
         {
+            //AbrirFormHijo(new Formularios_de_Menu.Clientes.Frm_Clientes());
             Formularios.Formularios_de_Menu.Clientes.Frm_Clientes form = new Formularios_de_Menu.Clientes.Frm_Clientes();
             this.AddOwnedForm(form);
             form.Show();
@@ -61,6 +62,7 @@ namespace SC__NEBO.Formularios
 
         private void btnNotaPeso_Click_1(object sender, EventArgs e)
         {
+
             Formularios.Formularios_de_Menu.Notas_de_Peso.Frm_Notas_Peso form = new Formularios_de_Menu.Notas_de_Peso.Frm_Notas_Peso();
             this.AddOwnedForm(form);
             form.Show();
@@ -100,5 +102,85 @@ namespace SC__NEBO.Formularios
             this.AddOwnedForm(form);
             form.Show();
         }
+
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panelcontenedor_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pbMenu_Click(object sender, EventArgs e)
+        {
+
+        }
+
+
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+      
+        }
+
+        private void btnMenu_Click(object sender, EventArgs e)
+        {
+            if (panel3.Width == 219)
+            {
+                this.tmContraerMenu.Start();
+            }
+            else if (panel3.Width == 44)
+            {
+                this.tmExpandirMenu.Start();
+            }
+        }
+
+        private void tmExpandirMenu_Tick_1(object sender, EventArgs e)
+        {
+            if (panel3.Width >= 219)
+                this.tmExpandirMenu.Stop();
+            else
+                panel3.Width = panel3.Width + 5;
+        }
+
+        private void tmContraerMenu_Tick(object sender, EventArgs e)
+        {
+            if (panel3.Width <= 44)
+                this.tmContraerMenu.Stop();
+            else
+                panel3.Width = panel3.Width - 5;
+        }
+
+        //ABRIR UN FORMULARION DENTRO DEL PANEL
+        //private void AbrirFormHijo(object formhijo)
+        //{
+        //    if (this.panelcontenedor.Controls.Count > 0)
+        //        this.panelcontenedor.Controls.RemoveAt(0);
+        //    Form fh = formhijo as Form;
+        //    fh.TopLevel = false;
+        //    fh.Dock = DockStyle.Fill;
+        //    this.panelcontenedor.Controls.Add(fh);
+        //    this.panelcontenedor.Tag = fh;
+        //    fh.Show();
+
+        //}
     }
 }
